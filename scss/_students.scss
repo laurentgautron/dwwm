@@ -1,0 +1,34 @@
+.students {
+    padding-top: 4rem;
+    background-color: $orange;
+    color: #FFF;
+    margin-bottom: 4rem;
+    h2 {
+        @extend %ralewaybold;
+        font-size: 4.8rem;
+        line-height: 3rem;
+        text-align: center;
+        padding-bottom: 4.3rem;
+    }
+    .students-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .student-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            border-radius: 50%;
+            padding-bottom: 2rem;
+        }
+    }
+    h3 {
+        padding-bottom: 2rem;
+    }
+    .student-link {
+        color: #FFF;
+        margin-bottom: 4.3rem;
+        text-decoration: underline;
+    }
+}

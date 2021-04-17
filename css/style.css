@@ -144,6 +144,16 @@ header .menu-link[href="#"], header .menu-link:focus, header .menu-link:hover {
   color: #FD7E37;
 }
 
+.formations h2, .students h2, .actualities h2, .hero .title h2, h1 {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+}
+
+.hero .title .meet-link, .follow {
+  font-family: Monserrat, sans-serif;
+  font-weight: 600;
+}
+
 /* montserrat-regular - latin */
 @font-face {
   font-family: "Montserrat";
@@ -203,15 +213,24 @@ a {
 
 h1 {
   text-transform: uppercase;
-  font-family: Raleway, sans-serif;
   font-size: 4.8rem;
-  font-weight: 700;
   line-height: 3rem;
   color: #FFF;
 }
 
-.crossing {
-  margin-left: -2rem;
+.follow {
+  font-size: 2.4rem;
+  background-color: #FD7E37;
+  color: #FFF;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.follow img {
+  padding-left: 1.6rem;
 }
 
 /******** header **********/
@@ -219,6 +238,9 @@ header {
   background-color: #FD7E37;
   padding-bottom: 2.2rem;
   padding-top: 2.2rem;
+}
+header .crossing {
+  margin-left: -2rem;
 }
 header .container {
   display: flex;
@@ -239,6 +261,10 @@ header .menu-link {
   background-image: url("../img/photo-arrière-plan.jpg");
   background-repeat: no-repeat;
   background-position: cover;
+  margin-bottom: 4rem;
+}
+.hero .crossing {
+  margin-left: -3rem;
 }
 .hero .title {
   background-color: rgba(0, 0, 0, 0.8);
@@ -255,22 +281,121 @@ header .menu-link {
   align-items: flex-end;
 }
 .hero .title h2 {
-  font-family: Raleway, sans-serif;
   font-size: 7.2rem;
-  font-weight: 700;
   margin-bottom: 3rem;
 }
 .hero .title .dev {
   text-transform: uppercase;
 }
 .hero .title .meet-link {
-  font-family: Montserrat, sans-serif;
   font-size: 4rem;
-  font-weight: 600;
   line-height: 3.6rem;
   color: #FFF;
   background-color: #FD7E37;
   padding: 2rem 3rem;
+}
+
+.actualities h2 {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  color: #331100;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.actualities .actualities-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.actualities .actualities-cards a {
+  box-shadow: 0px 0px 48px #00000029;
+  border-radius: 0.4rem;
+  width: 100%;
+  max-width: 40.4rem;
+  color: #331100;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  margin-bottom: 4.9rem;
+}
+.actualities .actualities-img {
+  margin-bottom: 2.4rem;
+}
+.actualities .card-text-content {
+  text-align: left;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+.actualities .card-text-content p {
+  font-size: 2rem;
+  padding-bottom: 2.4rem;
+}
+.actualities h3 {
+  font-size: 2.4rem;
+}
+.actualities time {
+  color: #663014;
+}
+.actualities time img {
+  width: 1.5rem;
+  float: left;
+  margin-right: 0.8rem;
+}
+
+.students {
+  padding-top: 4rem;
+  background-color: #FD7E37;
+  color: #FFF;
+  margin-bottom: 4rem;
+}
+.students h2 {
+  font-size: 4.8rem;
+  line-height: 3rem;
+  text-align: center;
+  padding-bottom: 4.3rem;
+}
+.students .students-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.students .student-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.students .student-item img {
+  border-radius: 50%;
+  padding-bottom: 2rem;
+}
+.students h3 {
+  padding-bottom: 2rem;
+}
+.students .student-link {
+  color: #FFF;
+  margin-bottom: 4.3rem;
+  text-decoration: underline;
+}
+
+.formations .modules-container {
+  display: flex;
+  justify-content: space-between;
+}
+.formations h2 {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.formations .formations-link {
+  width: 100%;
+  max-width: 62.2rem;
+}
+.formations .formations-img {
+  margin-bottom: 4rem;
+}
+.formations h3 {
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  margin-bottom: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

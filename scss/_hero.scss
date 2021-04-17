@@ -4,6 +4,10 @@
     background-image: url("../img/photo-arrière-plan.jpg");
     background-repeat: no-repeat;
     background-position: cover;
+    margin-bottom: 4rem;
+    .crossing {
+        margin-left: -3rem;
+    }
     .title {
         background-color: rgba($color: #000000, $alpha: .8);
         padding-left: 2.4rem;
@@ -18,18 +22,16 @@
         flex-direction: column;
         align-items: flex-end;
         h2 {
-            font-family: Raleway, sans-serif;
+            @extend %ralewaybold;
             font-size: 7.2rem;
-            font-weight: 700;
             margin-bottom: 3rem;
         }
         .dev {
             text-transform: uppercase;
         }
         .meet-link {
-            font-family: Montserrat, sans-serif;
+            @extend %montserratSemiBold;
             font-size: 4rem;
-            font-weight: 600;
             line-height: 3.6rem;
             color: #FFF;
             background-color: $orange;
