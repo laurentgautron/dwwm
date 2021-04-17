@@ -45,11 +45,6 @@
          url('../fonts/raleway/raleway-v19-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
-%activelink {
-    background-color: #fff;
-    color: $orange;
-}
-
   
 body {
     background-color: #fff;
@@ -77,7 +72,7 @@ h1 {
     color: #FFF;
 }
 
-h1 span {
+.crossing {
     margin-left: -2rem;
 }
 

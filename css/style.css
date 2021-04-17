@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Box sizing rules */
 *,
 *::before,
@@ -138,6 +139,11 @@ address {
   text-shadow: none;
 }
 
+header .menu-link[href="#"], header .menu-link:focus, header .menu-link:hover {
+  background-color: #fff;
+  color: #FD7E37;
+}
+
 /* montserrat-regular - latin */
 @font-face {
   font-family: "Montserrat";
@@ -178,11 +184,6 @@ address {
   src: local(""), url("../fonts/raleway/raleway-v19-latin-700.woff2") format("woff2"), url("../fonts/raleway/raleway-v19-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-header .menu-link[href="#"], header .menu-link:focus, header .menu-link:hover {
-  background-color: #fff;
-  color: #FD7E37;
-}
-
 body {
   background-color: #fff;
   line-height: 1.5;
@@ -209,7 +210,7 @@ h1 {
   color: #FFF;
 }
 
-h1 span {
+.crossing {
   margin-left: -2rem;
 }
 
@@ -231,6 +232,45 @@ header .menu-link {
   color: #FFF;
   padding: 1em;
   text-transform: uppercase;
+}
+.hero {
+  position: relative;
+  height: 90vh;
+  background-image: url("../img/photo-arrière-plan.jpg");
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+.hero .title {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-left: 2.4rem;
+  padding-right: 2.8rem;
+  padding-top: 2.3rem;
+  padding-bottom: 3rem;
+  position: absolute;
+  top: 24rem;
+  right: 0;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.hero .title h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 7.2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+.hero .title .dev {
+  text-transform: uppercase;
+}
+.hero .title .meet-link {
+  font-family: Montserrat, sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 3.6rem;
+  color: #FFF;
+  background-color: #FD7E37;
+  padding: 2rem 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
