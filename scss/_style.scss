@@ -1,0 +1,115 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat/montserrat-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat/montserrat-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-500 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/montserrat/montserrat-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat/montserrat-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-600 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/montserrat/montserrat-v15-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat/montserrat-v15-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* raleway-600 - latin */
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/raleway/raleway-v19-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/raleway/raleway-v19-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* raleway-700 - latin */
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/raleway/raleway-v19-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/raleway/raleway-v19-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+%activelink {
+    background-color: #fff;
+    color: $orange;
+}
+
+  
+body {
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 160rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: Raleway, sans-serif;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: #FFF;
+}
+
+h1 span {
+    margin-left: -2rem;
+}
+
+/******** header **********/
+
+header {
+    background-color: $orange;
+    padding-bottom: 2.2rem;
+    padding-top: 2.2rem;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-item {
+        display: inline-block;
+    }
+    .menu-link {
+        color: #FFF;
+        padding: 1em;
+        text-transform: uppercase;
+        &:hover {
+            @extend %activelink;
+        }
+        &:focus {
+            @extend %activelink;
+        }
+        &[href="#"] {
+            @extend %activelink;
+        }
+    }
+}
+
+
+
