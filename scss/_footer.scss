@@ -1,0 +1,19 @@
+footer {
+    background-color: $orange;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+    }
+    .mentions-link {
+        color: #FFF;
+    }
+    .mentions-link:first-of-type {
+        padding-right: 2rem;
+    }
+    .socialNetworks-link:not(:last-child) {
+        margin-right: 6.6rem;
+    }
+}

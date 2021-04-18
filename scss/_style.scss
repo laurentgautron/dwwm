@@ -49,6 +49,7 @@
 body {
     background-color: #fff;
     line-height: 1.5;
+    color: #FFF;
 }
 
 a {
@@ -99,36 +100,7 @@ time {
 
 /******** header **********/
 
-header {
-    background-color: $orange;
-    padding-bottom: 2.2rem;
-    padding-top: 2.2rem;
-    .crossing {
-        margin-left: -2rem;
-    }
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .menu-item {
-        display: inline-block;
-    }
-    .menu-link {
-        color: #FFF;
-        padding: 1em;
-        text-transform: uppercase;
-        &:hover {
-            @extend %activelink;
-        }
-        &:focus {
-            @extend %activelink;
-        }
-        &[href="#"] {
-            @extend %activelink;
-        }
-    }
-}
+
 
 
 

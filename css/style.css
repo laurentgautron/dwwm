@@ -167,7 +167,7 @@ header .menu-link[href="#"], header .menu-link:focus, header .menu-link:hover {
 .formations h2, .actualities h2 {
   font-size: 4.8rem;
   line-height: 4.8rem;
-  color: dark;
+  color: #331100;
   margin-bottom: 4rem;
   text-align: center;
 }
@@ -233,6 +233,7 @@ header .menu-link[href="#"], header .menu-link:focus, header .menu-link:hover {
 body {
   background-color: #fff;
   line-height: 1.5;
+  color: #FFF;
 }
 
 a {
@@ -415,6 +416,26 @@ header .menu-link {
 .formations .card-text-content .card-text {
   font-size: 2rem;
   padding-bottom: 2.4rem;
+}
+
+footer {
+  background-color: #FD7E37;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+footer .mentions-link {
+  color: #FFF;
+}
+footer .mentions-link:first-of-type {
+  padding-right: 2rem;
+}
+footer .socialNetworks-link:not(:last-child) {
+  margin-right: 6.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
