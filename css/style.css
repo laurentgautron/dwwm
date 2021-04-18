@@ -144,7 +144,7 @@ header .menu-link[href="#"], header .menu-link:focus, header .menu-link:hover {
   color: #FD7E37;
 }
 
-.students h2, .main-students h2, .hero .title h2, .logo-title, .oneactuality h2, .oneformation-hero .formation-title, .formations h2, .actualities h2 {
+.students h2, .main-students h2, .hero .title h2, .logo-title, .contact h2, .oneactuality h2, .oneformation-hero .formation-title, .formations h2, .actualities h2 {
   font-family: Raleway, sans-serif;
   font-weight: 700;
 }
@@ -159,12 +159,12 @@ header .menu-link[href="#"], header .menu-link:focus, header .menu-link:hover {
   font-weight: 600;
 }
 
-.oneactuality .actuality-text, .formations .cards a, .actualities .cards a {
+.contact form label, .oneactuality .actuality-text, .formations .cards a, .actualities .cards a {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
 }
 
-.oneactuality h2, .oneformation-hero .formation-title, .formations h2, .actualities h2 {
+.contact h2, .oneactuality h2, .oneformation-hero .formation-title, .formations h2, .actualities h2 {
   font-size: 4.8rem;
   line-height: 4.8rem;
   color: #331100;
@@ -212,6 +212,14 @@ header .menu-link[href="#"], header .menu-link:focus, header .menu-link:hover {
   font-style: normal;
   font-weight: 600;
   src: local(""), url("../fonts/montserrat/montserrat-v15-latin-600.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v15-latin-600.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-italic - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 400;
+  src: local(""), url("../fonts/montserrat-v15-latin-italic.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-italic.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* raleway-600 - latin */
@@ -511,6 +519,54 @@ header .menu-link {
 .oneactuality .actuality-text {
   font-size: 2rem;
   padding-bottom: 4rem;
+}
+
+.contact {
+  color: #331100;
+  padding-top: 4rem;
+}
+.contact h2 {
+  padding-bottom: 14.1rem;
+}
+.contact form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 5rem;
+  column-gap: 3rem;
+}
+.contact form .fullwidth {
+  grid-column: 1/-1;
+}
+.contact form label {
+  display: block;
+  font-size: 2rem;
+}
+.contact form .btn {
+  max-width: 18rem;
+  border: 0;
+}
+.contact form .align-right {
+  margin-top: -3rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+input, textarea {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #707070;
+  width: 100%;
+  font-family: Montserrat, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #33110080;
+}
+
+textarea {
+  height: 22rem;
 }
 
 footer {
