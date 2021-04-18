@@ -87,6 +87,16 @@ h1 {
     }
 }
 
+time {
+    color: $brown;
+    img {
+    float: left;
+    width: 1.5rem;
+    margin-right: 0.8rem;
+    margin-top: 0.3rem;
+    }
+}
+
 /******** header **********/
 
 header {

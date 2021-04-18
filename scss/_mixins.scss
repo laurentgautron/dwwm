@@ -1,0 +1,28 @@
+@mixin dwwm-cards($cards-width) {
+    h2 {
+        @extend %h2title;
+    }
+    .cards {
+        @extend %cards-display;
+        flex-wrap: wrap;
+        a {
+            @extend %card-link;
+            max-width: $cards-width;
+        }
+    }
+    .card-img {
+        margin-bottom: 2.4rem;
+    }
+    .card-text-content {
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+        @extend %h3title;
+        h3 {
+            margin-top: 1.7rem;
+        }
+        .card-text {
+            font-size: 2rem;
+            padding-bottom: 2.4rem;
+        }
+    }
+}

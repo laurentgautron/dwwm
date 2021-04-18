@@ -144,14 +144,50 @@ header .menu-link[href="#"], header .menu-link:focus, header .menu-link:hover {
   color: #FD7E37;
 }
 
-.formations h2, .students h2, .actualities h2, .hero .title h2, h1 {
+.students h2, .hero .title h2, h1, .formations h2, .actualities h2 {
   font-family: Raleway, sans-serif;
   font-weight: 700;
+}
+
+.formations .card-text-content .card-title, .actualities .card-text-content .card-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
 }
 
 .hero .title .meet-link, .follow {
   font-family: Monserrat, sans-serif;
   font-weight: 600;
+}
+
+.formations .cards a, .actualities .cards a {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+}
+
+.formations h2, .actualities h2 {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  color: dark;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.formations .cards a, .actualities .cards a {
+  box-shadow: 0px 0px 48px #00000029;
+  border-radius: 0.4rem;
+  width: 100%;
+  color: #331100;
+  margin-bottom: 4rem;
+}
+
+.formations .cards, .actualities .cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formations .card-text-content .card-title, .actualities .card-text-content .card-title {
+  font-size: 2.4rem;
+  padding-bottom: 2.4rem;
 }
 
 /* montserrat-regular - latin */
@@ -233,6 +269,16 @@ h1 {
   padding-left: 1.6rem;
 }
 
+time {
+  color: #663014;
+}
+time img {
+  float: left;
+  width: 1.5rem;
+  margin-right: 0.8rem;
+  margin-top: 0.3rem;
+}
+
 /******** header **********/
 header {
   background-color: #FD7E37;
@@ -295,50 +341,25 @@ header .menu-link {
   padding: 2rem 3rem;
 }
 
-.actualities h2 {
-  font-size: 4.8rem;
-  line-height: 4.8rem;
-  color: #331100;
-  text-align: center;
-  margin-bottom: 4rem;
-}
-.actualities .actualities-cards {
-  display: flex;
-  justify-content: space-between;
+.actualities .cards {
   flex-wrap: wrap;
 }
-.actualities .actualities-cards a {
-  box-shadow: 0px 0px 48px #00000029;
-  border-radius: 0.4rem;
-  width: 100%;
+.actualities .cards a {
   max-width: 40.4rem;
-  color: #331100;
-  font-family: Montserrat, sans-serif;
-  font-weight: 400;
-  margin-bottom: 4.9rem;
 }
-.actualities .actualities-img {
+.actualities .card-img {
   margin-bottom: 2.4rem;
 }
 .actualities .card-text-content {
-  text-align: left;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
 }
-.actualities .card-text-content p {
+.actualities .card-text-content h3 {
+  margin-top: 1.7rem;
+}
+.actualities .card-text-content .card-text {
   font-size: 2rem;
   padding-bottom: 2.4rem;
-}
-.actualities h3 {
-  font-size: 2.4rem;
-}
-.actualities time {
-  color: #663014;
-}
-.actualities time img {
-  width: 1.5rem;
-  float: left;
-  margin-right: 0.8rem;
 }
 
 .students {
@@ -375,27 +396,25 @@ header .menu-link {
   text-decoration: underline;
 }
 
-.formations .modules-container {
-  display: flex;
-  justify-content: space-between;
+.formations .cards {
+  flex-wrap: wrap;
 }
-.formations h2 {
-  font-size: 4.8rem;
-  line-height: 4.8rem;
-  text-align: center;
-  padding-bottom: 4rem;
-}
-.formations .formations-link {
-  width: 100%;
+.formations .cards a {
   max-width: 62.2rem;
 }
-.formations .formations-img {
-  margin-bottom: 4rem;
+.formations .card-img {
+  margin-bottom: 2.4rem;
 }
-.formations h3 {
-  font-family: Raleway, sans-serif;
-  font-weight: 600;
-  margin-bottom: 4rem;
+.formations .card-text-content {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+.formations .card-text-content h3 {
+  margin-top: 1.7rem;
+}
+.formations .card-text-content .card-text {
+  font-size: 2rem;
+  padding-bottom: 2.4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
