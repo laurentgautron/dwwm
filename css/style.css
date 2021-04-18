@@ -144,12 +144,12 @@ header .menu-link[href="#"], header .menu-link:focus, header .menu-link:hover {
   color: #FD7E37;
 }
 
-.students h2, .hero .title h2, h1, .formations h2, .actualities h2 {
+.students h2, .main-students h2, .hero .title h2, .logo-title, .oneformation-hero .formation-title, .formations h2, .actualities h2 {
   font-family: Raleway, sans-serif;
   font-weight: 700;
 }
 
-.formations .intro, .formations .card-text-content .card-title, .actualities .card-text-content .card-title {
+.main-oneformation p, .formations .intro, .formations .card-text-content .card-title, .actualities .card-text-content .card-title {
   font-family: Raleway, sans-serif;
   font-weight: 600;
 }
@@ -164,7 +164,7 @@ header .menu-link[href="#"], header .menu-link:focus, header .menu-link:hover {
   font-weight: 400;
 }
 
-.formations h2, .actualities h2 {
+.oneformation-hero .formation-title, .formations h2, .actualities h2 {
   font-size: 4.8rem;
   line-height: 4.8rem;
   color: #331100;
@@ -248,7 +248,7 @@ a {
   padding-right: 3rem;
 }
 
-h1 {
+.logo-title {
   text-transform: uppercase;
   font-size: 4.8rem;
   line-height: 3rem;
@@ -366,10 +366,44 @@ header .menu-link {
   padding-bottom: 2.4rem;
 }
 
-.students {
+.main-students {
   padding-top: 4rem;
   background-color: #FD7E37;
   color: #FFF;
+  margin-bottom: 4rem;
+}
+.main-students h2 {
+  font-size: 4.8rem;
+  line-height: 3rem;
+  text-align: center;
+  padding-bottom: 4.3rem;
+}
+.main-students .students-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.main-students .student-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-students .student-item img {
+  border-radius: 50%;
+  padding-bottom: 2rem;
+}
+.main-students h3 {
+  padding-bottom: 2rem;
+}
+.main-students .student-link {
+  color: #FFF;
+  margin-bottom: 4.3rem;
+  text-decoration: underline;
+}
+
+.students {
+  padding-top: 4rem;
+  background-color: #FFF;
+  color: #331100;
   margin-bottom: 4rem;
 }
 .students h2 {
@@ -395,7 +429,7 @@ header .menu-link {
   padding-bottom: 2rem;
 }
 .students .student-link {
-  color: #FFF;
+  color: #FD7E37;
   margin-bottom: 4.3rem;
   text-decoration: underline;
 }
@@ -431,6 +465,27 @@ header .menu-link {
   margin-bottom: 4rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.oneformation-hero {
+  background-image: url("../img/html-code.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.oneformation-hero .formation-title {
+  padding-top: 17.2rem;
+  padding-bottom: 17.2rem;
+  color: #FFF;
+}
+
+.main-oneformation p {
+  color: #331100;
+  width: 100%;
+  max-width: 84rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 4rem;
+  font-size: 2.4rem;
 }
 
 footer {

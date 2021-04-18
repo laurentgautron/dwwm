@@ -1,0 +1,24 @@
+.oneformation-hero {
+    background-image: url("../img/html-code.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .formation-title {
+        @extend %h2title;
+        padding-top: 17.2rem;
+        padding-bottom: 17.2rem;
+        color: #FFF;
+    }
+}
+
+.main-oneformation {
+    p {
+        color: $dark;
+        @extend %ralewaySemiBold;
+        width: 100%;
+        max-width: 84rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 4rem;
+        font-size: 2.4rem;
+    }
+}
