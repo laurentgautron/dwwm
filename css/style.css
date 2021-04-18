@@ -149,7 +149,7 @@ header .menu-link[href="#"], header .menu-link:focus, header .menu-link:hover {
   font-weight: 700;
 }
 
-.formations .card-text-content .card-title, .actualities .card-text-content .card-title {
+.formations .intro, .formations .card-text-content .card-title, .actualities .card-text-content .card-title {
   font-family: Raleway, sans-serif;
   font-weight: 600;
 }
@@ -343,6 +343,7 @@ header .menu-link {
 
 .actualities {
   padding-top: 4rem;
+  color: #331100;
 }
 .actualities .cards {
   flex-wrap: wrap;
@@ -399,6 +400,10 @@ header .menu-link {
   text-decoration: underline;
 }
 
+.formations {
+  padding-top: 4rem;
+  color: #331100;
+}
 .formations .cards {
   flex-wrap: wrap;
 }
@@ -418,6 +423,14 @@ header .menu-link {
 .formations .card-text-content .card-text {
   font-size: 2rem;
   padding-bottom: 2.4rem;
+}
+.formations .intro {
+  font-size: 2.4rem;
+  width: 100%;
+  max-width: 84rem;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {

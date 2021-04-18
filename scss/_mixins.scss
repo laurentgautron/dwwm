@@ -1,4 +1,5 @@
 @mixin dwwm-cards($cards-width) {
+    color: $dark;
     h2 {
         @extend %h2title;
     }
