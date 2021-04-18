@@ -144,7 +144,7 @@ header .menu-link[href="#"], header .menu-link:focus, header .menu-link:hover {
   color: #FD7E37;
 }
 
-.students h2, .main-students h2, .hero .title h2, .logo-title, .oneformation-hero .formation-title, .formations h2, .actualities h2 {
+.students h2, .main-students h2, .hero .title h2, .logo-title, .oneactuality h2, .oneformation-hero .formation-title, .formations h2, .actualities h2 {
   font-family: Raleway, sans-serif;
   font-weight: 700;
 }
@@ -159,12 +159,12 @@ header .menu-link[href="#"], header .menu-link:focus, header .menu-link:hover {
   font-weight: 600;
 }
 
-.formations .cards a, .actualities .cards a {
+.oneactuality .actuality-text, .formations .cards a, .actualities .cards a {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
 }
 
-.oneformation-hero .formation-title, .formations h2, .actualities h2 {
+.oneactuality h2, .oneformation-hero .formation-title, .formations h2, .actualities h2 {
   font-size: 4.8rem;
   line-height: 4.8rem;
   color: #331100;
@@ -486,6 +486,31 @@ header .menu-link {
   margin-right: auto;
   padding-bottom: 4rem;
   font-size: 2.4rem;
+}
+
+.oneactuality {
+  color: #331100;
+  width: 100%;
+  max-width: 84rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.oneactuality figure {
+  padding-bottom: 4rem;
+}
+.oneactuality figure img {
+  width: 100%;
+  max-width: 84rem;
+}
+.oneactuality time {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 4rem;
+}
+.oneactuality .actuality-text {
+  font-size: 2rem;
+  padding-bottom: 4rem;
 }
 
 footer {

@@ -1,0 +1,28 @@
+.oneactuality {
+    color: $dark;
+    width: 100%;
+    max-width: 84rem;
+    margin-right: auto;
+    margin-left: auto;
+    h2 {
+        @extend %h2title;
+    }
+    figure {
+        padding-bottom: 4rem;
+        img {
+            width: 100%;
+            max-width: 84rem;
+        }
+    }
+    time {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 4rem;
+    }
+    .actuality-text {
+        @extend %montserratRegular;
+        font-size: 2rem;
+        padding-bottom: 4rem;
+    }
+}
