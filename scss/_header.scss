@@ -14,16 +14,12 @@ header {
         display: inline-block;
     }
     .menu-link {
+        @extend %montserratSemiBold;
+        font-size: 2rem;
         color: #FFF;
         padding: 1em;
         text-transform: uppercase;
-        &:hover {
-            @extend %activelink;
-        }
-        &:focus {
-            @extend %activelink;
-        }
-        &[href="#"] {
+        &:hover, &:focus, &[href="#"] {
             @extend %activelink;
         }
     }

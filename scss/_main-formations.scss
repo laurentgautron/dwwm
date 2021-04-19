@@ -1,8 +1,7 @@
 .formations {
-    padding-top: 4rem;
     @include dwwm-cards(62.2rem);
     .intro {
-        @extend %ralewaySemiBold;
+        font-weight: 600;
         font-size: 2.4rem;
         width: 100%;
         max-width: 84rem;

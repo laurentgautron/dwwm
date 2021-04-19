@@ -62,6 +62,30 @@ body {
     background-color: #fff;
     line-height: 1.5;
     color: $dark;
+    font-family: Raleway, sans-serif;
+}
+
+h1, like-h1 {
+    font-size: 7.2rem;
+    line-height: 8.6rem;
+    font-weight: 700;
+    font-size: 7.2rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    color: $dark;
+}
+
+p {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
 }
 
 a {
@@ -78,7 +102,7 @@ a {
 
 .logo-title {
     text-transform: uppercase;
-    @extend %ralewaybold;
+    font-weight: 700;
     font-size: 4.8rem;
     line-height: 3rem;
     color: #FFF;
@@ -101,6 +125,8 @@ a {
 }
 
 time {
+    @extend %montserratRegular;
+    font-size: 1.6rem;
     color: $brown;
     img {
     float: left;
@@ -108,11 +134,7 @@ time {
     margin-right: 0.8rem;
     margin-top: 0.3rem;
     }
+    p {
+        font-size: 1.6rem;
+    }
 }
-
-/******** header **********/
-
-
-
-
-

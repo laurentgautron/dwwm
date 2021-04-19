@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     .formation-title {
-        @extend %h2title;
+        text-align: center;
         padding-top: 17.2rem;
         padding-bottom: 17.2rem;
         color: #FFF;
@@ -13,12 +13,14 @@
 .main-oneformation {
     p {
         color: $dark;
-        @extend %ralewaySemiBold;
+        font-family: Raleway, sans-serif;
+        font-weight: 600;
+        font-size: 2.4rem;
         width: 100%;
         max-width: 84rem;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 4rem;
-        font-size: 2.4rem;
+        padding-top: 4rem;
     }
 }

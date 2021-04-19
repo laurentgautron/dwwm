@@ -2,7 +2,6 @@
     color: $dark;
     padding-top: 4rem;
     h2 {
-        @extend %h2title;
         padding-bottom: 14.1rem;
     }
     form {

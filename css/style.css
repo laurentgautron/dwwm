@@ -139,37 +139,19 @@ address {
   text-shadow: none;
 }
 
-header .menu-link[href="#"], header .menu-link:focus, header .menu-link:hover {
+header .menu-link:hover, header .menu-link:focus, header .menu-link[href="#"] {
   background-color: #fff;
   color: #FD7E37;
 }
 
-.students h2, .main-students h2, .hero .title h2, .logo-title, .contact h2, .oneactuality h2, .oneformation-hero .formation-title, .formations h2, .actualities h2 {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-}
-
-.main-oneformation p, .formations .intro, .formations .card-text-content .card-title, .actualities .card-text-content .card-title {
-  font-family: Raleway, sans-serif;
+footer h3, .students h3, .main-students h3, .hero .title .meet-link, header .menu-link, .follow {
+  font-family: Montserrat, sans-serif;
   font-weight: 600;
 }
 
-.hero .title .meet-link, .follow {
-  font-family: Monserrat, sans-serif;
-  font-weight: 600;
-}
-
-.contact form label, .oneactuality .actuality-text, .formations .cards a, .actualities .cards a {
+.contact form label, .students .student-link, .main-students .student-link, time {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
-}
-
-.contact h2, .oneactuality h2, .oneformation-hero .formation-title, .formations h2, .actualities h2 {
-  font-size: 4.8rem;
-  line-height: 4.8rem;
-  color: #331100;
-  margin-bottom: 4rem;
-  text-align: center;
 }
 
 .formations .cards a, .actualities .cards a {
@@ -177,6 +159,7 @@ header .menu-link[href="#"], header .menu-link:focus, header .menu-link:hover {
   border-radius: 0.4rem;
   width: 100%;
   color: #331100;
+  font-weight: 600;
   margin-bottom: 4rem;
 }
 
@@ -186,6 +169,7 @@ header .menu-link[href="#"], header .menu-link:focus, header .menu-link:hover {
 }
 
 .formations .card-text-content .card-title, .actualities .card-text-content .card-title {
+  font-weight: 600;
   font-size: 2.4rem;
   padding-bottom: 2.4rem;
 }
@@ -242,6 +226,30 @@ body {
   background-color: #fff;
   line-height: 1.5;
   color: #331100;
+  font-family: Raleway, sans-serif;
+}
+
+h1, like-h1 {
+  font-size: 7.2rem;
+  line-height: 8.6rem;
+  font-weight: 700;
+  font-size: 7.2rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  color: #331100;
+}
+
+p {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
 }
 
 a {
@@ -258,6 +266,7 @@ a {
 
 .logo-title {
   text-transform: uppercase;
+  font-weight: 700;
   font-size: 4.8rem;
   line-height: 3rem;
   color: #FFF;
@@ -279,6 +288,7 @@ a {
 }
 
 time {
+  font-size: 1.6rem;
   color: #663014;
 }
 time img {
@@ -287,8 +297,10 @@ time img {
   margin-right: 0.8rem;
   margin-top: 0.3rem;
 }
+time p {
+  font-size: 1.6rem;
+}
 
-/******** header **********/
 header {
   background-color: #FD7E37;
   padding-bottom: 2.2rem;
@@ -306,6 +318,7 @@ header .menu-item {
   display: inline-block;
 }
 header .menu-link {
+  font-size: 2rem;
   color: #FFF;
   padding: 1em;
   text-transform: uppercase;
@@ -334,10 +347,6 @@ header .menu-link {
   flex-direction: column;
   align-items: flex-end;
 }
-.hero .title h2 {
-  font-size: 7.2rem;
-  margin-bottom: 3rem;
-}
 .hero .title .dev {
   text-transform: uppercase;
 }
@@ -347,10 +356,10 @@ header .menu-link {
   color: #FFF;
   background-color: #FD7E37;
   padding: 2rem 3rem;
+  border: 1px solid #707070;
 }
 
 .actualities {
-  padding-top: 4rem;
   color: #331100;
 }
 .actualities .cards {
@@ -370,21 +379,19 @@ header .menu-link {
   margin-top: 1.7rem;
 }
 .actualities .card-text-content .card-text {
-  font-size: 2rem;
   padding-bottom: 2.4rem;
 }
 
 .main-students {
-  padding-top: 4rem;
   background-color: #FD7E37;
   color: #FFF;
-  margin-bottom: 4rem;
 }
 .main-students h2 {
+  color: #FFF;
+  font-weight: 700;
   font-size: 4.8rem;
   line-height: 3rem;
   text-align: center;
-  padding-bottom: 4.3rem;
 }
 .main-students .students-list {
   display: grid;
@@ -400,25 +407,26 @@ header .menu-link {
   padding-bottom: 2rem;
 }
 .main-students h3 {
+  font-size: 2.4rem;
   padding-bottom: 2rem;
 }
 .main-students .student-link {
+  font-size: 1.6rem;
   color: #FFF;
   margin-bottom: 4.3rem;
   text-decoration: underline;
 }
 
 .students {
-  padding-top: 4rem;
   background-color: #FFF;
   color: #331100;
-  margin-bottom: 4rem;
 }
 .students h2 {
+  color: #FFF;
+  font-weight: 700;
   font-size: 4.8rem;
   line-height: 3rem;
   text-align: center;
-  padding-bottom: 4.3rem;
 }
 .students .students-list {
   display: grid;
@@ -434,16 +442,17 @@ header .menu-link {
   padding-bottom: 2rem;
 }
 .students h3 {
+  font-size: 2.4rem;
   padding-bottom: 2rem;
 }
 .students .student-link {
+  font-size: 1.6rem;
   color: #FD7E37;
   margin-bottom: 4.3rem;
   text-decoration: underline;
 }
 
 .formations {
-  padding-top: 4rem;
   color: #331100;
 }
 .formations .cards {
@@ -463,10 +472,10 @@ header .menu-link {
   margin-top: 1.7rem;
 }
 .formations .card-text-content .card-text {
-  font-size: 2rem;
   padding-bottom: 2.4rem;
 }
 .formations .intro {
+  font-weight: 600;
   font-size: 2.4rem;
   width: 100%;
   max-width: 84rem;
@@ -481,6 +490,7 @@ header .menu-link {
   background-size: cover;
 }
 .oneformation-hero .formation-title {
+  text-align: center;
   padding-top: 17.2rem;
   padding-bottom: 17.2rem;
   color: #FFF;
@@ -488,12 +498,15 @@ header .menu-link {
 
 .main-oneformation p {
   color: #331100;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;
   width: 100%;
   max-width: 84rem;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 4rem;
-  font-size: 2.4rem;
+  padding-top: 4rem;
 }
 
 .oneactuality {
@@ -518,7 +531,6 @@ header .menu-link {
   padding-bottom: 4rem;
 }
 .oneactuality .actuality-text {
-  font-size: 2rem;
   padding-bottom: 4rem;
 }
 
@@ -567,9 +579,67 @@ header .menu-link {
   justify-content: flex-end;
 }
 
+.confidentiality {
+  padding-left: 22rem;
+  padding-right: 22rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 4rem;
+}
+
+.onestudent {
+  padding-top: 4rem;
+}
+.onestudent h2 {
+  line-height: 3rem;
+}
+.onestudent figure, .onestudent img {
+  width: 100%;
+  max-width: 40.4rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.onestudent figure img, .onestudent img img {
+  border-radius: 50%;
+}
+.onestudent ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 4rem;
+  column-gap: 3.6rem;
+  padding-left: 0;
+  padding-bottom: 4rem;
+}
+.onestudent ul li {
+  list-style-type: none;
+}
+.onestudent ul li h3 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
+}
+.onestudent ul li p {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.onestudent .some-words p {
+  font-size: 2.4rem;
+  padding-bottom: 4rem;
+}
+.onestudent .some-words h3 {
+  padding-bottom: 2rem;
+}
+
 footer {
   background-color: #FD7E37;
   color: #FFF;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  border: 1px solid #707070;
+}
+footer h3 {
+  font-size: 2rem;
 }
 footer .container {
   display: flex;
