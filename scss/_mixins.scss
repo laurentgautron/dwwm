@@ -7,6 +7,9 @@
             @extend %card-link;
             max-width: $cards-width;
         }
+        a:hover {
+            color: $orange;
+        }
     }
     .card-img {
         margin-bottom: 2.4rem;

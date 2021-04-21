@@ -30,7 +30,15 @@
             color: #FFF;
             background-color: $orange;
             padding: 2rem 3rem;
+            margin-top: 3rem;
+            margin-right: 2.8rem;
             border: 1px solid #707070;
         }
     }
+    @media (min-resolution: 144dpi) {
+        .hero {
+            background-image: url(../img/about@2x.jpg);
+        }
+    }
 }
+
