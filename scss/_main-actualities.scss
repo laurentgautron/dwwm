@@ -1,3 +1,7 @@
 .actualities {
     @include dwwm-cards(40.4rem);
 }
+
+.list-actualities-nav {
+    @extend %button-slide;
+}

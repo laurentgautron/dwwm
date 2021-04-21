@@ -8,6 +8,13 @@ footer {
         @extend %montserratSemiBold;
         font-size: 2rem;
     }
+    .address {
+        width: 100%;
+        max-width: 40.4rem;
+        svg style {
+            fill: red;
+        }
+    }
     .container {
         display: flex;
         justify-content: space-between;

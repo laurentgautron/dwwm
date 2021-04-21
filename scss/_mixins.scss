@@ -7,8 +7,9 @@
             @extend %card-link;
             max-width: $cards-width;
         }
-        a:hover {
-            color: $orange;
+        a:hover, a:hover time, a:hover .follow {
+            background-color: $dark;
+            color: #FFF;
         }
     }
     .card-img {
@@ -57,9 +58,18 @@
     }
     .student-link {
         @extend %montserratRegular;
+        padding-left: 1em;
+        padding-right: 1em;
         font-size: 1.6rem;
         color: $colorlink;
         margin-bottom: 4.3rem;
         text-decoration: underline;
+    }
+}
+
+@mixin student-link-effects($bgColor, $textColor) {
+    .student-link:hover {
+        background-color: $bgColor;
+        color: $textColor;
     }
 }

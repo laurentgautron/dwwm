@@ -9,4 +9,8 @@
         margin-left: auto;
         margin-right: auto; 
     }
+    .list-formations-nav {
+        @extend %button-slide;
+    }
 }
+  

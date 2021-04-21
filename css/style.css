@@ -174,6 +174,37 @@ footer h3, .students h3, .main-students h3, .hero .title .meet-link, header .men
   padding-bottom: 2.4rem;
 }
 
+.formations .list-formations-nav, .students .list-students-nav, .list-actualities-nav {
+  width: 23rem;
+  height: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 4rem;
+}
+.formations .list-formations-nav ul, .students .list-students-nav ul, .list-actualities-nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -4rem;
+}
+.formations .list-formations-nav ul li, .students .list-students-nav ul li, .list-actualities-nav ul li {
+  list-style-type: none;
+  width: 3rem;
+  height: 3rem;
+}
+.formations .list-formations-nav ul li button, .students .list-students-nav ul li button, .list-actualities-nav ul li button {
+  border-radius: 0.4rem;
+  background-color: transparent;
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #FD7E37;
+  color: #FD7E37;
+}
+.formations .list-formations-nav ul li .activButton, .students .list-students-nav ul li .activButton, .list-actualities-nav ul li .activButton {
+  color: #FFF;
+  background-color: #FD7E37;
+}
+
 /* montserrat-regular - latin */
 @font-face {
   font-family: "Montserrat";
@@ -258,10 +289,13 @@ a {
 }
 
 .container {
+  position: relative;
   width: 100%;
-  max-width: 160rem;
+  max-width: 137rem;
   padding-left: 3rem;
   padding-right: 3rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo-title {
@@ -320,9 +354,13 @@ header .menu-item {
 header .menu-link {
   font-size: 2rem;
   color: #FFF;
-  padding: 1em;
+  padding: 0.7em;
   text-transform: uppercase;
 }
+header li:last-child .menu-link {
+  margin-right: -1em;
+}
+
 .hero {
   position: relative;
   height: 90vh;
@@ -375,8 +413,9 @@ header .menu-link {
 .actualities .cards a {
   max-width: 40.4rem;
 }
-.actualities .cards a:hover {
-  color: #FD7E37;
+.actualities .cards a:hover, .actualities .cards a:hover time, .actualities .cards a:hover .follow {
+  background-color: #331100;
+  color: #FFF;
 }
 .actualities .card-img {
   margin-bottom: 2.4rem;
@@ -421,13 +460,15 @@ header .menu-link {
   padding-bottom: 2rem;
 }
 .main-students .student-link {
+  padding-left: 1em;
+  padding-right: 1em;
   font-size: 1.6rem;
   color: #FFF;
   margin-bottom: 4.3rem;
   text-decoration: underline;
 }
 .main-students .student-link:hover {
-  background-color: #fff;
+  background-color: #FFF;
   color: #FD7E37;
 }
 
@@ -460,16 +501,17 @@ header .menu-link {
   padding-bottom: 2rem;
 }
 .students .student-link {
+  padding-left: 1em;
+  padding-right: 1em;
   font-size: 1.6rem;
   color: #FD7E37;
   margin-bottom: 4.3rem;
   text-decoration: underline;
 }
 .students .student-link:hover {
-  background-color: #FD7E37;
+  background-color: #331100;
   color: #FFF;
 }
-
 .formations {
   color: #331100;
 }
@@ -479,8 +521,9 @@ header .menu-link {
 .formations .cards a {
   max-width: 62.2rem;
 }
-.formations .cards a:hover {
-  color: #FD7E37;
+.formations .cards a:hover, .formations .cards a:hover time, .formations .cards a:hover .follow {
+  background-color: #331100;
+  color: #FFF;
 }
 .formations .card-img {
   margin-bottom: 2.4rem;
@@ -504,7 +547,6 @@ header .menu-link {
   margin-left: auto;
   margin-right: auto;
 }
-
 .oneformation-hero {
   background-image: url("../img/html-code.jpg");
   background-repeat: no-repeat;
@@ -666,6 +708,13 @@ footer {
 }
 footer h3 {
   font-size: 2rem;
+}
+footer .address {
+  width: 100%;
+  max-width: 40.4rem;
+}
+footer .address svg style {
+  fill: red;
 }
 footer .container {
   display: flex;

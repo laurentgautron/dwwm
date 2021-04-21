@@ -17,10 +17,13 @@ header {
         @extend %montserratSemiBold;
         font-size: 2rem;
         color: #FFF;
-        padding: 1em;
+        padding: 0.7em;
         text-transform: uppercase;
         &:hover, &:focus, &[href="#"] {
             @extend %activelink;
         }
+    }
+    li:last-child .menu-link {
+        margin-right: -1em;
     }
 }

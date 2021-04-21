@@ -1,15 +1,12 @@
 .main-students {
     @include students-card($orange, #FFF, #FFF);
-    .student-link:hover {
-        background-color: #fff;
-        color: $orange;
-    }
+    @include student-link-effects(#FFF, $orange);
 }
 
 .students {
     @include students-card(#FFF, $dark, $orange);
-    .student-link:hover {
-        background-color: $orange;
-        color: #FFF;
+    @include student-link-effects($dark, #FFF);
+    .list-students-nav {
+        @extend %button-slide;
     }
 }
