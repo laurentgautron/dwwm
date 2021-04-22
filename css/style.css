@@ -175,6 +175,8 @@ footer h3, .students h3, .main-students h3, .hero .title .meet-link, header .men
 }
 
 .formations .list-formations-nav, .students .list-students-nav, .list-actualities-nav {
+  font-family: Montserrat;
+  font-weight: 400;
   width: 23rem;
   height: 3rem;
   margin-right: auto;
@@ -194,11 +196,11 @@ footer h3, .students h3, .main-students h3, .hero .title .meet-link, header .men
 .formations .list-formations-nav ul li button, .students .list-students-nav ul li button, .list-actualities-nav ul li button {
   border-radius: 0.4rem;
   background-color: transparent;
-  display: block;
   width: 3rem;
-  height: 3rem;
   border: 1px solid #FD7E37;
   color: #FD7E37;
+  padding-left: 0;
+  padding-right: 0;
 }
 .formations .list-formations-nav ul li .activButton, .students .list-students-nav ul li .activButton, .list-actualities-nav ul li .activButton {
   color: #FFF;
@@ -260,14 +262,18 @@ body {
   font-family: Raleway, sans-serif;
 }
 
-h1, like-h1 {
+:focus {
+  outline: 3px solid blue;
+}
+
+h1, .like-h1 {
   font-size: 7.2rem;
   line-height: 8.6rem;
   font-weight: 700;
   font-size: 7.2rem;
 }
 
-h2 {
+h2, .like-h2 {
   font-weight: 700;
   font-size: 4.8rem;
   line-height: 4.8rem;
@@ -289,7 +295,6 @@ a {
 }
 
 .container {
-  position: relative;
   width: 100%;
   max-width: 137rem;
   padding-left: 3rem;
@@ -336,9 +341,13 @@ time p {
 }
 
 header {
+  position: relative;
   background-color: #FD7E37;
   padding-bottom: 2.2rem;
   padding-top: 2.2rem;
+}
+header .header-menu {
+  display: flex;
 }
 header .crossing {
   margin-left: -2rem;
@@ -347,9 +356,6 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-header .menu-item {
-  display: inline-block;
 }
 header .menu-link {
   font-size: 2rem;
@@ -360,9 +366,49 @@ header .menu-link {
 header li:last-child .menu-link {
   margin-right: -1em;
 }
+@media screen and (min-width: 1000px) {
+  header [hidden] {
+    visibility: visible;
+  }
+}
+
+.toggle-menu {
+  display: block;
+  background-color: transparent;
+  border: 1px solid red;
+  height: 9.5rem;
+}
+.toggle-menu .burger::before, .toggle-menu .burger::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  content: "";
+}
+.toggle-menu .burger::before {
+  top: 1rem;
+}
+.toggle-menu .burger::after {
+  bottom: 1rem;
+}
+.toggle-menu .burger {
+  position: relative;
+}
+.toggle-menu .burger, .toggle-menu .burger::before, .toggle-menu .burger::after {
+  display: block;
+  width: 6rem;
+  height: 0.5rem;
+  background-color: blue;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border: 1px solid black;
+}
+
+[hidden] {
+  display: block;
+  visibility: hidden;
+}
 
 .hero {
-  position: relative;
   height: 90vh;
   background-image: url("../img/photo-arrière-plan.jpg");
   background-repeat: no-repeat;
@@ -604,9 +650,8 @@ header li:last-child .menu-link {
 
 .contact {
   color: #331100;
-  padding-top: 4rem;
 }
-.contact h2 {
+.contact h1 {
   padding-bottom: 14.1rem;
 }
 .contact form {
@@ -712,9 +757,6 @@ footer h3 {
 footer .address {
   width: 100%;
   max-width: 40.4rem;
-}
-footer .address svg style {
-  fill: red;
 }
 footer .container {
   display: flex;

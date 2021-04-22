@@ -1,7 +1,11 @@
 header {
+    position: relative;
     background-color: $orange;
     padding-bottom: 2.2rem;
     padding-top: 2.2rem;
+    .header-menu {
+        display: flex;
+    }
     .crossing {
         margin-left: -2rem;
     }
@@ -9,9 +13,6 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-    .menu-item {
-        display: inline-block;
     }
     .menu-link {
         @extend %montserratSemiBold;
@@ -26,4 +27,42 @@ header {
     li:last-child .menu-link {
         margin-right: -1em;
     }
+    @media screen and (min-width: 1000px) {
+        [hidden] {
+            visibility: visible;
+        }
+        
+    }
+}
+
+.toggle-menu {
+    display: block;
+    background-color: transparent;
+    border: 1px solid red;
+    height: 9.5rem;
+    .burger::before, .burger::after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        content: "";
+    }
+    .burger::before { top: 1rem;}
+    .burger::after { bottom: 1rem;}
+
+    .burger {
+        position: relative;
+    }
+    .burger, .burger::before, .burger::after {
+        display: block;
+        width: 6rem;
+        height: 0.5rem;
+        background-color: blue;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        border: 1px solid black;
+    }
+} 
+[hidden] {
+    display: block;
+    visibility: hidden;
 }

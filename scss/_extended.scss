@@ -36,32 +36,34 @@
 }
 
 %button-slide {
+    font-family: Montserrat;
+    font-weight: 400;
     width: 23rem;
-        height: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 4rem;
-        ul {
-            display: flex;
-            justify-content: space-between;
-            margin-left: -4rem;
-            li {
-                list-style-type: none;
+    height: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 4rem;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin-left: -4rem;
+        li {
+            list-style-type: none;
+            width: 3rem;
+            height: 3rem;
+            button {
+                border-radius: 0.4rem;
+                background-color: transparent;
                 width: 3rem;
-                height: 3rem;
-                button {
-                    border-radius: 0.4rem;
-                    background-color: transparent;
-                    display: block;
-                    width: 3rem;
-                    height: 3rem;
-                    border: 1px solid $orange;
-                    color: $orange;
-                }
-                .activButton {
-                    color: #FFF;
-                    background-color: $orange;
-                }
-            }  
-        }
+                border: 1px solid $orange;
+                color: $orange;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .activButton {
+                color: #FFF;
+                background-color: $orange;
+            }
+        }  
+    }
 }
