@@ -9,15 +9,21 @@ footer {
         font-size: 2rem;
     }
     .address {
-        width: 100%;
-        max-width: 40.4rem;
+        max-width: 34.4rem;
+        padding-bottom: 3rem;
     }
     .container {
         display: flex;
+        flex-direction: column;
+        text-align: center;
         justify-content: space-between;
         align-items: center;
         padding-bottom: 4rem;
         padding-top: 4rem;
+        flex-wrap: wrap;
+    }
+    .mentions {
+        padding-bottom: 3rem;
     }
     .mentions-link {
         color: #FFF;
@@ -25,7 +31,31 @@ footer {
     .mentions-link:first-of-type {
         padding-right: 2rem;
     }
+    .socialNetworks {
+        margin-right: auto;
+        margin-left: auto;
+    }
     .socialNetworks-link:not(:last-child) {
         margin-right: 6.6rem;
+    }
+    @include xl {
+        .address {
+            max-width: 40.4rem;
+            width: 100%;
+        }
+        .socialNetworks {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+    @include lg {
+        .container {
+            flex-direction: row;
+            text-align: initial;
+        }
+        .mentions {
+            margin-right: 2rem;
+            padding-bottom: 0;
+        }
     }
 }

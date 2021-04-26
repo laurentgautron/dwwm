@@ -403,9 +403,9 @@ header .menu-link {
     padding-bottom: initial;
   }
 }
-@media screen and (min-width: 1362px) {
+@media screen and (min-width: 1400px) {
   header .header-menu {
-    margin-right: -1em;
+    margin-right: -3em;
   }
 }
 
@@ -793,15 +793,21 @@ footer h3 {
   font-size: 2rem;
 }
 footer .address {
-  width: 100%;
-  max-width: 40.4rem;
+  max-width: 34.4rem;
+  padding-bottom: 3rem;
 }
 footer .container {
   display: flex;
+  flex-direction: column;
+  text-align: center;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 4rem;
   padding-top: 4rem;
+  flex-wrap: wrap;
+}
+footer .mentions {
+  padding-bottom: 3rem;
 }
 footer .mentions-link {
   color: #FFF;
@@ -809,8 +815,32 @@ footer .mentions-link {
 footer .mentions-link:first-of-type {
   padding-right: 2rem;
 }
+footer .socialNetworks {
+  margin-right: auto;
+  margin-left: auto;
+}
 footer .socialNetworks-link:not(:last-child) {
   margin-right: 6.6rem;
+}
+@media screen and (min-width: 1140px) {
+  footer .address {
+    max-width: 40.4rem;
+    width: 100%;
+  }
+  footer .socialNetworks {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 870px) {
+  footer .container {
+    flex-direction: row;
+    text-align: initial;
+  }
+  footer .mentions {
+    margin-right: 2rem;
+    padding-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
