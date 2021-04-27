@@ -417,10 +417,10 @@ header .menu-link {
   height: 5.5rem;
 }
 .toggle-menu .burger::before, .toggle-menu .burger::after {
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
-  content: "";
 }
 .toggle-menu .burger::before {
   top: 1rem;
@@ -430,15 +430,19 @@ header .menu-link {
 }
 .toggle-menu .burger {
   position: relative;
+  display: block;
 }
 .toggle-menu .burger, .toggle-menu .burger::before, .toggle-menu .burger::after {
-  display: block;
+  color: #FD7E37;
   width: 6rem;
   height: 0.5rem;
   background-color: #FFF;
   border-radius: 0.25rem;
   margin-bottom: 0.3rem;
   margin-top: 0.3rem;
+}
+.toggle-menu .cross .burger {
+  transform: rotate(-34deg);
 }
 
 [hidden] {
