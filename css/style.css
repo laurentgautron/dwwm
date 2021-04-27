@@ -440,9 +440,19 @@ header .menu-link {
   border-radius: 0.25rem;
   margin-bottom: 0.3rem;
   margin-top: 0.3rem;
+  transition: transform 0.5s ease-in-out;
 }
-.toggle-menu .cross .burger {
-  transform: rotate(-34deg);
+
+.cross .burger {
+  transform: rotate(-45deg);
+}
+
+.cross .burger::before {
+  transform: translateY(-1.3rem) rotate(-90deg);
+}
+
+.cross .burger::after {
+  transform: translateY(1.3rem) rotate(90deg);
 }
 
 [hidden] {
