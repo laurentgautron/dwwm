@@ -1,15 +1,12 @@
-@mixin dwwm-cards($cards-width) {
+@mixin dwwm-cards($cards-width, $nbColumns) {
     color: $dark;
     .cards {
-        @extend %cards-display;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat($nbColumns, 1fr);
+        padding-bottom: 4rem;
         a {
             @extend %card-link;
             max-width: $cards-width;
-        }
-        a:hover, a:hover time, a:hover .follow {
-            background-color: $dark;
-            color: #FFF;
         }
     }
     .card-img {
@@ -28,47 +25,8 @@
     }
 }
 
-@mixin students-card($back, $colortitle, $colorlink) {
-    background-color: $back;
-    color: $colortitle;
-    h2 {
-        color: #FFF;
-        font-weight: 700;
-        font-size: 4.8rem;
-        line-height: 3rem;
-        text-align: center;
-    }
-    .students-list {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .student-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        img {
-            border-radius: 50%;
-            padding-bottom: 2rem;
-        }
-    }
-    h3 {
-        @extend %montserratSemiBold;
-        font-size: 2.4rem;
-        padding-bottom: 2rem;
-    }
-    .student-link {
-        @extend %montserratRegular;
-        padding-left: 1em;
-        padding-right: 1em;
-        font-size: 1.6rem;
-        color: $colorlink;
-        margin-bottom: 4.3rem;
-        text-decoration: underline;
-    }
-}
-
 @mixin student-link-effects($bgColor, $textColor) {
-    .student-link:hover {
+    a:hover p, a:hover h3, a:hover {
         background-color: $bgColor;
         color: $textColor;
     }

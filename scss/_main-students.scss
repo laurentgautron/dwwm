@@ -1,12 +1,49 @@
-.main-students {
-    @include students-card($orange, #FFF, #FFF);
-    @include student-link-effects(#FFF, $orange);
-}
-
-.students {
-    @include students-card(#FFF, $dark, $orange);
-    @include student-link-effects($dark, #FFF);
-    .list-students-nav {
-        @extend %button-slide;
+.main-students, .students {
+    h3 {
+        @extend %montserratSemiBold;
+        font-size: 2.4rem;
+        padding-bottom: 2rem;
     }
+    a {
+        text-align: center;
+    }
+    figure {
+        position: relative;
+        img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @include dwwm-cards(30rem, 4);
+    .cards a {
+        box-shadow: none;
+        padding-top: 1rem;
+    }
+    .student-link {
+        @extend %montserratRegular;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 1.6rem;
+        text-decoration: underline;
+    }
+}
+.main-students {
+    background-color: $orange;
+    h3, h2, .student-link {
+        color: #FFF;
+    }
+    @include student-link-effects(#FFF, $orange)
+}
+.students {
+    .cards {
+        padding-bottom: 0;
+    }
+    .student-link {
+        margin-bottom: 4rem;
+        color: $orange;
+    }
+    @include student-link-effects($dark, #FFF)
+}
+.list-nav {
+    @extend %button-slide;
 }

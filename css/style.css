@@ -144,37 +144,32 @@ header .menu-link:hover, header .menu-link:focus, header .menu-link[href="#"] {
   color: #FD7E37;
 }
 
-footer h3, .students h3, .main-students h3, .hero .title .meet-link, header .menu-link, .follow {
+footer h3, .main-students h3, .students h3, .hero .title .meet-link, header .menu-link, .follow {
   font-family: Montserrat, sans-serif;
   font-weight: 600;
 }
 
-.contact form label, .students .student-link, .main-students .student-link, time {
+.contact form label, .main-students .student-link, .students .student-link, time {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
 }
 
-.formations .cards a, .actualities .cards a {
+.formations .cards a, .main-students .cards a, .students .cards a, .actualities .cards a {
   box-shadow: 0px 0px 48px #00000029;
   border-radius: 0.4rem;
   width: 100%;
   color: #331100;
   font-weight: 600;
-  margin-bottom: 4rem;
+  align-self: flex-end;
 }
 
-.formations .cards, .actualities .cards {
-  display: flex;
-  justify-content: space-between;
-}
-
-.formations .card-text-content .card-title, .actualities .card-text-content .card-title {
+.formations .card-text-content .card-title, .main-students .card-text-content .card-title, .students .card-text-content .card-title, .actualities .card-text-content .card-title {
   font-weight: 600;
   font-size: 2.4rem;
   padding-bottom: 2.4rem;
 }
 
-.formations .list-formations-nav, .students .list-students-nav, .list-actualities-nav {
+.list-nav {
   font-family: Montserrat;
   font-weight: 400;
   width: 23rem;
@@ -183,17 +178,17 @@ footer h3, .students h3, .main-students h3, .hero .title .meet-link, header .men
   margin-left: auto;
   margin-bottom: 4rem;
 }
-.formations .list-formations-nav ul, .students .list-students-nav ul, .list-actualities-nav ul {
+.list-nav ul {
   display: flex;
   justify-content: space-between;
   margin-left: -4rem;
 }
-.formations .list-formations-nav ul li, .students .list-students-nav ul li, .list-actualities-nav ul li {
+.list-nav ul li {
   list-style-type: none;
   width: 3rem;
   height: 3rem;
 }
-.formations .list-formations-nav ul li button, .students .list-students-nav ul li button, .list-actualities-nav ul li button {
+.list-nav ul li button {
   border-radius: 0.4rem;
   background-color: transparent;
   width: 3rem;
@@ -202,7 +197,7 @@ footer h3, .students h3, .main-students h3, .hero .title .meet-link, header .men
   padding-left: 0;
   padding-right: 0;
 }
-.formations .list-formations-nav ul li .activButton, .students .list-students-nav ul li .activButton, .list-actualities-nav ul li .activButton {
+.list-nav ul li .activButton {
   color: #FFF;
   background-color: #FD7E37;
 }
@@ -256,7 +251,6 @@ footer h3, .students h3, .main-students h3, .hero .title .meet-link, header .men
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 body {
-  background-color: #fff;
   line-height: 1.5;
   color: #331100;
   font-family: Raleway, sans-serif;
@@ -333,7 +327,7 @@ time p {
 }
 
 header {
-  position: absolute;
+  position: relative;
   right: 0;
   left: 0;
   background-color: #FD7E37;
@@ -506,14 +500,12 @@ header .menu-link {
   color: #331100;
 }
 .actualities .cards {
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 4rem;
 }
 .actualities .cards a {
   max-width: 40.4rem;
-}
-.actualities .cards a:hover, .actualities .cards a:hover time, .actualities .cards a:hover .follow {
-  background-color: #331100;
-  color: #FFF;
 }
 .actualities .card-img {
   margin-bottom: 2.4rem;
@@ -528,100 +520,93 @@ header .menu-link {
 .actualities .card-text-content .card-text {
   padding-bottom: 2.4rem;
 }
-
-.main-students {
-  background-color: #FD7E37;
-  color: #FFF;
-}
-.main-students h2 {
-  color: #FFF;
-  font-weight: 700;
-  font-size: 4.8rem;
-  line-height: 3rem;
-  text-align: center;
-}
-.main-students .students-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-.main-students .student-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.main-students .student-item img {
-  border-radius: 50%;
-  padding-bottom: 2rem;
-}
-.main-students h3 {
-  font-size: 2.4rem;
-  padding-bottom: 2rem;
-}
-.main-students .student-link {
-  padding-left: 1em;
-  padding-right: 1em;
-  font-size: 1.6rem;
-  color: #FFF;
-  margin-bottom: 4.3rem;
-  text-decoration: underline;
-}
-.main-students .student-link:hover {
-  background-color: #FFF;
-  color: #FD7E37;
-}
-
-.students {
-  background-color: #FFF;
-  color: #331100;
-}
-.students h2 {
-  color: #FFF;
-  font-weight: 700;
-  font-size: 4.8rem;
-  line-height: 3rem;
-  text-align: center;
-}
-.students .students-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-.students .student-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.students .student-item img {
-  border-radius: 50%;
-  padding-bottom: 2rem;
-}
-.students h3 {
-  font-size: 2.4rem;
-  padding-bottom: 2rem;
-}
-.students .student-link {
-  padding-left: 1em;
-  padding-right: 1em;
-  font-size: 1.6rem;
-  color: #FD7E37;
-  margin-bottom: 4.3rem;
-  text-decoration: underline;
-}
-.students .student-link:hover {
+.actualities a:hover, .actualities a:hover time, .actualities a:hover .follow {
   background-color: #331100;
   color: #FFF;
 }
+
+.main-students, .students {
+  color: #331100;
+}
+.main-students h3, .students h3 {
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
+}
+.main-students a, .students a {
+  text-align: center;
+}
+.main-students figure, .students figure {
+  position: relative;
+}
+.main-students figure img, .students figure img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-students .cards, .students .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 4rem;
+}
+.main-students .cards a, .students .cards a {
+  max-width: 30rem;
+}
+.main-students .card-img, .students .card-img {
+  margin-bottom: 2.4rem;
+}
+.main-students .card-text-content, .students .card-text-content {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+.main-students .card-text-content h3, .students .card-text-content h3 {
+  margin-top: 1.7rem;
+}
+.main-students .card-text-content .card-text, .students .card-text-content .card-text {
+  padding-bottom: 2.4rem;
+}
+.main-students .cards a, .students .cards a {
+  box-shadow: none;
+  padding-top: 1rem;
+}
+.main-students .student-link, .students .student-link {
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1.6rem;
+  text-decoration: underline;
+}
+
+.main-students {
+  background-color: #FD7E37;
+}
+.main-students h3, .main-students h2, .main-students .student-link {
+  color: #FFF;
+}
+.main-students a:hover p, .main-students a:hover h3, .main-students a:hover {
+  background-color: #FFF;
+  color: #FD7E37;
+}
+
+.students .cards {
+  padding-bottom: 0;
+}
+.students .student-link {
+  margin-bottom: 4rem;
+  color: #FD7E37;
+}
+.students a:hover p, .students a:hover h3, .students a:hover {
+  background-color: #331100;
+  color: #FFF;
+}
+
 .formations {
   color: #331100;
 }
 .formations .cards {
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 4rem;
 }
 .formations .cards a {
   max-width: 62.2rem;
-}
-.formations .cards a:hover, .formations .cards a:hover time, .formations .cards a:hover .follow {
-  background-color: #331100;
-  color: #FFF;
 }
 .formations .card-img {
   margin-bottom: 2.4rem;
@@ -636,6 +621,10 @@ header .menu-link {
 .formations .card-text-content .card-text {
   padding-bottom: 2.4rem;
 }
+.formations a:hover, .formations a:hover time, .formations a:hover .follow {
+  background-color: #331100;
+  color: #FFF;
+}
 .formations .intro {
   font-weight: 600;
   font-size: 2.4rem;
@@ -645,6 +634,7 @@ header .menu-link {
   margin-left: auto;
   margin-right: auto;
 }
+
 .oneformation-hero {
   background-image: url("../img/html-code.jpg");
   background-repeat: no-repeat;

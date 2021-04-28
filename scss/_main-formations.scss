@@ -1,5 +1,9 @@
 .formations {
-    @include dwwm-cards(62.2rem);
+    @include dwwm-cards(62.2rem, 2);
+    a:hover, a:hover time, a:hover .follow {
+        background-color: $dark;
+        color: #FFF;
+    }
     .intro {
         font-weight: 600;
         font-size: 2.4rem;
@@ -9,8 +13,7 @@
         margin-left: auto;
         margin-right: auto; 
     }
-    .list-formations-nav {
-        @extend %button-slide;
-    }
 }
-  
+.list-nav {
+    @extend %button-slide;
+}
