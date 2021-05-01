@@ -16,7 +16,6 @@ header {
     }
     .header-menu {
         background-color: $orange;
-        text-align: center;
         position: absolute;
         left: 0;
         right: 0;
@@ -68,11 +67,6 @@ header {
         }
         .logo-title {
             padding-bottom: initial;
-        }
-    }
-    @media screen and (min-width: 1400px) {
-        .header-menu {
-            margin-right: -3em;
         }
     }
 }

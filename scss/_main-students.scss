@@ -42,7 +42,7 @@
         margin-bottom: 4rem;
         color: $orange;
     }
-    @include student-link-effects($dark, #FFF)
+    @include student-link-effects($orange, #FFF)
 }
 .list-nav {
     @extend %button-slide;
