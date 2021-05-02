@@ -1047,24 +1047,23 @@ footer .container {
 footer .mentions {
   padding-bottom: 3rem;
 }
-footer .mentions-link {
+footer .mentions .mentions-link {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   color: #FFF;
 }
-footer .mentions-link:hover,
-footer .mentions-link:focus {
+footer .mentions .mentions-link:hover, footer .mentions .mentions-link:focus {
   background-color: #fff;
   color: #FD7E37;
 }
-footer .mentions-link:first-of-type {
-  padding-right: 2rem;
+footer .mentions .mentions-link:first-of-type {
+  margin-right: 2rem;
 }
 footer .socialNetworks {
   margin-right: auto;
   margin-left: auto;
 }
-footer .socialNetworks-link:not(:last-child) {
+footer .socialNetworks .socialNetworks-link:not(:last-child) {
   margin-right: 6.6rem;
 }
 @media screen and (min-width: 1140px) {
