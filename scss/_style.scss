@@ -97,7 +97,6 @@ a {
 }
 
 .container {
-    position: relative;
     width: 100%;
     max-width: 137rem;
     padding-left: 3rem;
@@ -135,4 +134,8 @@ time {
     p {
         font-size: 1.6rem;
     }
+}
+
+.list-nav {
+    @extend %button-slide;
 }

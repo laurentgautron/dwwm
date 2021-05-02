@@ -1,0 +1,20 @@
+.actualities {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @include dwwm-cards(40.4rem);
+    a:hover, a:hover time, a:hover .follow {
+        background-color: $dark;
+        color: #FFF;
+    }
+    @media screen and (min-width: 811px) {
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media screen and (min-width: 1211px) {
+        .cards {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

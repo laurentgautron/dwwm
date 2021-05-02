@@ -1,20 +1,17 @@
 .main-students, .students {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
     h3 {
         @extend %montserratSemiBold;
         font-size: 2.4rem;
         padding-bottom: 2rem;
     }
     a {
+        padding: 2rem 3rem;
         text-align: center;
     }
-    figure {
-        position: relative;
-        img {
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-    @include dwwm-cards(30rem, 4);
+    @include dwwm-cards(30rem);
     .cards a {
         box-shadow: none;
         padding-top: 1rem;
@@ -25,6 +22,16 @@
         padding-right: 1em;
         font-size: 1.6rem;
         text-decoration: underline;
+    }
+    @media screen and (min-width: 640px) {
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media screen and (min-width: 1060px) {
+        .cards {
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 }
 .main-students {
@@ -42,8 +49,8 @@
         margin-bottom: 4rem;
         color: $orange;
     }
+    a {
+        padding-bottom: 0rem;
+    }
     @include student-link-effects($orange, #FFF)
-}
-.list-nav {
-    @extend %button-slide;
 }

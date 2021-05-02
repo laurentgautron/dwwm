@@ -289,7 +289,6 @@ a {
 }
 
 .container {
-  position: relative;
   width: 100%;
   max-width: 137rem;
   padding-left: 3rem;
@@ -345,6 +344,10 @@ header .logo-title {
   color: #FFF;
 }
 header .header-menu {
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
   background-color: #FD7E37;
   position: absolute;
   left: 0;
@@ -495,8 +498,10 @@ header .menu-link {
   color: #331100;
 }
 .actualities .cards {
+  grid-template-columns: repeat(1, 1fr);
+}
+.actualities .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   padding-bottom: 4rem;
   gap: 5rem;
 }
@@ -506,8 +511,17 @@ header .menu-link {
   flex-direction: column;
   height: 100%;
 }
+.actualities .card {
+  margin-right: auto;
+  margin-left: auto;
+}
 .actualities .card-img {
+  position: relative;
   margin-bottom: 2.4rem;
+}
+.actualities .card-img img {
+  margin-left: auto;
+  margin-right: auto;
 }
 .actualities .card-text-content {
   flex: 1;
@@ -524,27 +538,33 @@ header .menu-link {
   background-color: #331100;
   color: #FFF;
 }
+@media screen and (min-width: 811px) {
+  .actualities .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1211px) {
+  .actualities .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 .main-students, .students {
   color: #331100;
+}
+.main-students .cards, .students .cards {
+  grid-template-columns: repeat(1, 1fr);
 }
 .main-students h3, .students h3 {
   font-size: 2.4rem;
   padding-bottom: 2rem;
 }
 .main-students a, .students a {
+  padding: 2rem 3rem;
   text-align: center;
-}
-.main-students figure, .students figure {
-  position: relative;
-}
-.main-students figure img, .students figure img {
-  margin-left: auto;
-  margin-right: auto;
 }
 .main-students .cards, .students .cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   padding-bottom: 4rem;
   gap: 5rem;
 }
@@ -554,8 +574,17 @@ header .menu-link {
   flex-direction: column;
   height: 100%;
 }
+.main-students .card, .students .card {
+  margin-right: auto;
+  margin-left: auto;
+}
 .main-students .card-img, .students .card-img {
+  position: relative;
   margin-bottom: 2.4rem;
+}
+.main-students .card-img img, .students .card-img img {
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-students .card-text-content, .students .card-text-content {
   flex: 1;
@@ -578,6 +607,16 @@ header .menu-link {
   font-size: 1.6rem;
   text-decoration: underline;
 }
+@media screen and (min-width: 640px) {
+  .main-students .cards, .students .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1060px) {
+  .main-students .cards, .students .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 .main-students {
   background-color: #FD7E37;
@@ -597,6 +636,9 @@ header .menu-link {
   margin-bottom: 4rem;
   color: #FD7E37;
 }
+.students a {
+  padding-bottom: 0rem;
+}
 .students a:hover p, .students a:hover h3, .students a:hover {
   background-color: #FD7E37;
   color: #FFF;
@@ -607,7 +649,6 @@ header .menu-link {
 }
 .formations .cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   padding-bottom: 4rem;
   gap: 5rem;
 }
@@ -617,8 +658,17 @@ header .menu-link {
   flex-direction: column;
   height: 100%;
 }
+.formations .card {
+  margin-right: auto;
+  margin-left: auto;
+}
 .formations .card-img {
+  position: relative;
   margin-bottom: 2.4rem;
+}
+.formations .card-img img {
+  margin-left: auto;
+  margin-right: auto;
 }
 .formations .card-text-content {
   flex: 1;
@@ -630,6 +680,9 @@ header .menu-link {
 }
 .formations .card-text-content .card-text {
   padding-bottom: 2.4rem;
+}
+.formations .cards {
+  grid-template-columns: repeat(1, 1fr);
 }
 .formations a:hover, .formations a:hover time, .formations a:hover .follow {
   background-color: #331100;
@@ -643,6 +696,11 @@ header .menu-link {
   margin-bottom: 4rem;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1060px) {
+  .formations .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .oneformation-hero {

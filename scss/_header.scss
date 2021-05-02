@@ -15,6 +15,10 @@ header {
         color: #FFF;
     }
     .header-menu {
+        position: absolute;
+        right: 0;
+        left: 0;
+        text-align: center;
         background-color: $orange;
         position: absolute;
         left: 0;

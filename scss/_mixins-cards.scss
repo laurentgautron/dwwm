@@ -1,8 +1,7 @@
-@mixin dwwm-cards($cards-width, $nbColumns) {
+@mixin dwwm-cards($cards-width) {
     color: $dark;
     .cards {
         display: grid;
-        grid-template-columns: repeat($nbColumns, 1fr);
         padding-bottom: 4rem;
         gap: 5rem;
         a {
@@ -13,8 +12,17 @@
             height: 100%;
         }
     }
+    .card {
+        margin-right: auto;
+        margin-left: auto;
+    }
     .card-img {
+        position: relative;
         margin-bottom: 2.4rem;
+        img {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     .card-text-content {
         flex: 1;

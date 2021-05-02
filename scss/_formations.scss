@@ -1,5 +1,8 @@
 .formations {
-    @include dwwm-cards(62.2rem, 2);
+    @include dwwm-cards(62.2rem);
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
     a:hover, a:hover time, a:hover .follow {
         background-color: $dark;
         color: #FFF;
@@ -13,7 +16,9 @@
         margin-left: auto;
         margin-right: auto; 
     }
-}
-.list-nav {
-    @extend %button-slide;
+    @media screen and (min-width: 1060px) {
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 }
