@@ -32,6 +32,11 @@
             margin-top: 3rem;
             margin-right: 2.8rem;
             border: 1px solid #707070;
+            transition: background-color 0.2s ease-in-out, color 0.5s ease-in-out;
+            &:hover, &:focus {
+                background-color: #fff;
+                color: $orange;
+            }
         }
     }
     @media (min-resolution: 144dpi) {

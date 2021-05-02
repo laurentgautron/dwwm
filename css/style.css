@@ -163,7 +163,7 @@ footer h3, .main-students h3, .students h3, .hero .title .meet-link, header .men
   align-self: flex-end;
 }
 
-.formations .card-text-content .card-title, .main-students .card-text-content .card-title, .students .card-text-content .card-title, .actualities .card-text-content .card-title {
+.formations .card .card-text-content .card-title, .main-students .card .card-text-content .card-title, .students .card .card-text-content .card-title, .actualities .card .card-text-content .card-title {
   font-weight: 600;
   padding-bottom: 2.4rem;
 }
@@ -512,6 +512,11 @@ header .menu-link {
   margin-top: 3rem;
   margin-right: 2.8rem;
   border: 1px solid #707070;
+  transition: background-color 0.2s ease-in-out, color 0.5s ease-in-out;
+}
+.hero .title .meet-link:hover, .hero .title .meet-link:focus {
+  background-color: #fff;
+  color: #FD7E37;
 }
 @media (min-resolution: 144dpi) {
   .hero .hero {
@@ -540,23 +545,23 @@ header .menu-link {
   margin-right: auto;
   margin-left: auto;
 }
-.actualities .card-img {
+.actualities .card .card-img {
   position: relative;
   margin-bottom: 2.4rem;
 }
-.actualities .card-img img {
+.actualities .card .card-img img {
   margin-left: auto;
   margin-right: auto;
 }
-.actualities .card-text-content {
+.actualities .card .card-text-content {
   flex: 1;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
 }
-.actualities .card-text-content h3 {
+.actualities .card .card-text-content h3 {
   margin-top: 1.7rem;
 }
-.actualities .card-text-content .card-text {
+.actualities .card .card-text-content .card-text {
   padding-bottom: 2.4rem;
 }
 .actualities a:hover p,
@@ -610,23 +615,23 @@ header .menu-link {
   margin-right: auto;
   margin-left: auto;
 }
-.main-students .card-img, .students .card-img {
+.main-students .card .card-img, .students .card .card-img {
   position: relative;
   margin-bottom: 2.4rem;
 }
-.main-students .card-img img, .students .card-img img {
+.main-students .card .card-img img, .students .card .card-img img {
   margin-left: auto;
   margin-right: auto;
 }
-.main-students .card-text-content, .students .card-text-content {
+.main-students .card .card-text-content, .students .card .card-text-content {
   flex: 1;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
 }
-.main-students .card-text-content h3, .students .card-text-content h3 {
+.main-students .card .card-text-content h3, .students .card .card-text-content h3 {
   margin-top: 1.7rem;
 }
-.main-students .card-text-content .card-text, .students .card-text-content .card-text {
+.main-students .card .card-text-content .card-text, .students .card .card-text-content .card-text {
   padding-bottom: 2.4rem;
 }
 .main-students .cards a, .students .cards a {
@@ -708,23 +713,23 @@ header .menu-link {
   margin-right: auto;
   margin-left: auto;
 }
-.formations .card-img {
+.formations .card .card-img {
   position: relative;
   margin-bottom: 2.4rem;
 }
-.formations .card-img img {
+.formations .card .card-img img {
   margin-left: auto;
   margin-right: auto;
 }
-.formations .card-text-content {
+.formations .card .card-text-content {
   flex: 1;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
 }
-.formations .card-text-content h3 {
+.formations .card .card-text-content h3 {
   margin-top: 1.7rem;
 }
-.formations .card-text-content .card-text {
+.formations .card .card-text-content .card-text {
   padding-bottom: 2.4rem;
 }
 .formations .cards {
