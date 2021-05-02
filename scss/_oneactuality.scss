@@ -5,6 +5,11 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 4rem;
+    .like-h2 {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        font-size: 2.8rem;
+    }
     figure {
         padding-bottom: 4rem;
         img {
@@ -19,6 +24,32 @@
         padding-bottom: 4rem;
     }
     .actuality-text {
+        line-height: 1.2;
         padding-bottom: 4rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        font-size: 1.5rem;
+        @media screen and (min-width: 520px) {
+            line-height: 1.5;
+        }
+        @media screen and (min-width: 650px) {
+            font-size: 2rem;
+        }
+        @media screen and (min-width: 880px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    @media screen and (min-width: 380px) {
+        font-size: 3.5rem;
+    }
+    @media screen and (min-width: 575px) {
+        font-size: 4rem;
+    }
+    @media screen and (min-width: 690px) {
+        like-h2 {
+            padding-right: 0;
+            padding-left: 0;
+        }   
     }
 }

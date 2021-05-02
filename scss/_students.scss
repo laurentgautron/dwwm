@@ -39,7 +39,7 @@
     h3, h2, .student-link {
         color: #FFF;
     }
-    @include student-link-effects(#FFF, $orange)
+    @include link-effects(#FFF, $orange)
 }
 .students {
     .cards {
@@ -52,5 +52,5 @@
     a {
         padding-bottom: 0rem;
     }
-    @include student-link-effects($orange, #FFF)
+    @include link-effects($orange, #FFF)
 }

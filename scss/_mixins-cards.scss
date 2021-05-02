@@ -38,8 +38,15 @@
     }
 }
 
-@mixin student-link-effects($bgColor, $textColor) {
-    a:hover p, a:hover h3, a:hover {
+@mixin link-effects($bgColor, $textColor) {
+    a:hover p, 
+    a:hover h3,
+    a:hover time, 
+    a:hover,
+    a:focus p,
+    a:focus h3,
+    a:focus time,
+    a:focus {
         background-color: $bgColor;
         color: $textColor;
     }

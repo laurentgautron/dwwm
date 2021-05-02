@@ -5,9 +5,12 @@
     }
     form {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         row-gap: 2rem;
         column-gap: 3.2rem;
+        @media screen and (min-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
         input, textarea {
             border-top: 0;
             border-left: 0;

@@ -165,7 +165,6 @@ footer h3, .main-students h3, .students h3, .hero .title .meet-link, header .men
 
 .formations .card-text-content .card-title, .main-students .card-text-content .card-title, .students .card-text-content .card-title, .actualities .card-text-content .card-title {
   font-weight: 600;
-  font-size: 2.4rem;
   padding-bottom: 2.4rem;
 }
 
@@ -257,11 +256,10 @@ body {
 }
 
 :focus {
-  outline: 3px solid blue;
+  outline: 3px solid #331100;
 }
 
 h1, .like-h1 {
-  font-size: 7.2rem;
   line-height: 8.6rem;
   font-weight: 700;
   font-size: 7.2rem;
@@ -269,18 +267,37 @@ h1, .like-h1 {
 
 h2, .like-h2 {
   font-weight: 700;
-  font-size: 4.8rem;
+  font-size: 4rem;
   line-height: 4.8rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
   text-align: center;
   color: #331100;
 }
+@media screen and (min-width: 373px) {
+  h2, .like-h2 {
+    font-size: 4.8rem;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+}
+@media screen and (min-width: 411px) {
+  h3 {
+    font-size: 2.4rem;
+  }
+}
 
 p {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 411px) {
+  p {
+    font-size: 2rem;
+  }
 }
 
 a {
@@ -298,7 +315,7 @@ a {
 }
 
 .follow {
-  font-size: 2.4rem;
+  font-size: 2rem;
   background-color: #FD7E37;
   color: #FFF;
   text-align: center;
@@ -310,6 +327,11 @@ a {
 }
 .follow img {
   padding-left: 1.6rem;
+}
+@media screen and (min-width: 411px) {
+  .follow {
+    font-size: 2.4rem;
+  }
 }
 
 time {
@@ -334,7 +356,12 @@ header {
   padding-bottom: 2.2rem;
   padding-top: 2.2rem;
   padding-right: 2.5rem;
-  padding-left: 2.5rem;
+  padding-left: 0rem;
+}
+@media screen and (min-width: 390px) {
+  header {
+    padding-left: 2.5rem;
+  }
 }
 header .logo-title {
   text-transform: uppercase;
@@ -344,9 +371,6 @@ header .logo-title {
   color: #FFF;
 }
 header .header-menu {
-  position: absolute;
-  right: 0;
-  left: 0;
   text-align: center;
   background-color: #FD7E37;
   position: absolute;
@@ -402,6 +426,7 @@ header .menu-link {
 }
 
 .toggle-menu {
+  margin-left: 2rem;
   display: block;
   background-color: transparent;
   border: 1px solid #FFF;
@@ -534,7 +559,14 @@ header .menu-link {
 .actualities .card-text-content .card-text {
   padding-bottom: 2.4rem;
 }
-.actualities a:hover, .actualities a:hover time, .actualities a:hover .follow {
+.actualities a:hover p,
+.actualities a:hover h3,
+.actualities a:hover time,
+.actualities a:hover,
+.actualities a:focus p,
+.actualities a:focus h3,
+.actualities a:focus time,
+.actualities a:focus {
   background-color: #331100;
   color: #FFF;
 }
@@ -624,7 +656,14 @@ header .menu-link {
 .main-students h3, .main-students h2, .main-students .student-link {
   color: #FFF;
 }
-.main-students a:hover p, .main-students a:hover h3, .main-students a:hover {
+.main-students a:hover p,
+.main-students a:hover h3,
+.main-students a:hover time,
+.main-students a:hover,
+.main-students a:focus p,
+.main-students a:focus h3,
+.main-students a:focus time,
+.main-students a:focus {
   background-color: #FFF;
   color: #FD7E37;
 }
@@ -639,7 +678,14 @@ header .menu-link {
 .students a {
   padding-bottom: 0rem;
 }
-.students a:hover p, .students a:hover h3, .students a:hover {
+.students a:hover p,
+.students a:hover h3,
+.students a:hover time,
+.students a:hover,
+.students a:focus p,
+.students a:focus h3,
+.students a:focus time,
+.students a:focus {
   background-color: #FD7E37;
   color: #FFF;
 }
@@ -684,22 +730,45 @@ header .menu-link {
 .formations .cards {
   grid-template-columns: repeat(1, 1fr);
 }
-.formations a:hover, .formations a:hover time, .formations a:hover .follow {
+@media screen and (min-width: 1060px) {
+  .formations .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.formations a:hover p,
+.formations a:hover h3,
+.formations a:hover time,
+.formations a:hover,
+.formations a:focus p,
+.formations a:focus h3,
+.formations a:focus time,
+.formations a:focus {
   background-color: #331100;
   color: #FFF;
 }
 .formations .intro {
+  line-height: 1.2;
   font-weight: 600;
-  font-size: 2.4rem;
+  font-size: 1.7rem;
   width: 100%;
   max-width: 84rem;
   margin-bottom: 4rem;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 1060px) {
-  .formations .cards {
-    grid-template-columns: repeat(2, 1fr);
+@media screen and (min-width: 350px) {
+  .formations .intro {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 460px) {
+  .formations .intro {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (min-width: 540px) {
+  .formations .intro {
+    line-height: 1.5;
   }
 }
 
@@ -709,14 +778,25 @@ header .menu-link {
   background-size: cover;
 }
 .oneformation-hero .formation-title {
+  font-size: 4rem;
   text-align: center;
   padding-top: 17.2rem;
   padding-bottom: 17.2rem;
   color: #FFF;
 }
+@media screen and (min-width: 570px) {
+  .oneformation-hero .formation-title {
+    font-size: 6rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .oneformation-hero .formation-title {
+    font-size: 7.2rem;
+  }
+}
 @media (min-resolution: 144dpi) {
   .oneformation-hero .hero {
-    background-image: url(../img/about@2x.jpg);
+    background-image: url("../img/html-code@2x.jpg");
   }
 }
 
@@ -724,13 +804,25 @@ header .menu-link {
   color: #331100;
   font-family: Raleway, sans-serif;
   font-weight: 600;
-  font-size: 2.4rem;
+  font-size: 1.7rem;
   width: 100%;
   max-width: 84rem;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 4rem;
   padding-top: 4rem;
+  line-height: 1.2;
+}
+@media screen and (min-width: 390px) {
+  .main-oneformation p {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .main-oneformation p {
+    line-height: 1.6;
+    font-size: 2.4rem;
+  }
 }
 
 .oneactuality {
@@ -740,6 +832,11 @@ header .menu-link {
   margin-right: auto;
   margin-left: auto;
   margin-top: 4rem;
+}
+.oneactuality .like-h2 {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  font-size: 2.8rem;
 }
 .oneactuality figure {
   padding-bottom: 4rem;
@@ -755,7 +852,43 @@ header .menu-link {
   padding-bottom: 4rem;
 }
 .oneactuality .actuality-text {
+  line-height: 1.2;
   padding-bottom: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 520px) {
+  .oneactuality .actuality-text {
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 650px) {
+  .oneactuality .actuality-text {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 880px) {
+  .oneactuality .actuality-text {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 380px) {
+  .oneactuality {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 575px) {
+  .oneactuality {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 690px) {
+  .oneactuality like-h2 {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .contact {
@@ -766,9 +899,14 @@ header .menu-link {
 }
 .contact form {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   row-gap: 2rem;
   column-gap: 3.2rem;
+}
+@media screen and (min-width: 992px) {
+  .contact form {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .contact form input, .contact form textarea {
   border-top: 0;
@@ -803,11 +941,25 @@ header .menu-link {
 }
 
 .confidentiality {
-  padding-left: 22rem;
-  padding-right: 22rem;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 4rem;
+}
+@media screen and (min-width: 993px) {
+  .confidentiality {
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+}
+@media screen and (min-width: 1122px) {
+  .confidentiality {
+    padding-left: 22rem;
+    padding-right: 22rem;
+  }
+}
+.confidentiality p {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .onestudent {
@@ -827,7 +979,7 @@ header .menu-link {
 }
 .onestudent ul {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   row-gap: 4rem;
   column-gap: 3.6rem;
   padding-left: 0;
@@ -835,19 +987,28 @@ header .menu-link {
 }
 .onestudent ul li {
   list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 .onestudent ul li h3 {
   font-weight: 600;
-  font-size: 2.4rem;
   padding-bottom: 2rem;
 }
 .onestudent ul li p {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
-  font-size: 2rem;
+}
+@media screen and (min-width: 540px) {
+  .onestudent ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1030px) {
+  .onestudent ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .onestudent .some-words p {
-  font-size: 2.4rem;
   padding-bottom: 4rem;
 }
 .onestudent .some-words h3 {
@@ -882,7 +1043,14 @@ footer .mentions {
   padding-bottom: 3rem;
 }
 footer .mentions-link {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   color: #FFF;
+}
+footer .mentions-link:hover,
+footer .mentions-link:focus {
+  background-color: #fff;
+  color: #FD7E37;
 }
 footer .mentions-link:first-of-type {
   padding-right: 2rem;

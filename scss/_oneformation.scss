@@ -3,14 +3,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     .formation-title {
+        font-size: 4rem;
         text-align: center;
         padding-top: 17.2rem;
         padding-bottom: 17.2rem;
         color: #FFF;
+        @media screen and (min-width: 570px) {
+            font-size: 6rem;
+        }
+        @media screen and (min-width: 680px) {
+            font-size: 7.2rem;
+        }
     }
     @media (min-resolution: 144dpi) {
         .hero {
-            background-image: url(../img/about@2x.jpg);
+            background-image: url("../img/html-code@2x.jpg");
         }
     }
 }
@@ -20,12 +27,20 @@
         color: $dark;
         font-family: Raleway, sans-serif;
         font-weight: 600;
-        font-size: 2.4rem;
+        font-size: 1.7rem;
         width: 100%;
         max-width: 84rem;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 4rem;
         padding-top: 4rem;
+        line-height: 1.2;
+        @media screen and (min-width: 390px) {
+            font-size: 2rem;
+        }
+        @media screen and (min-width: 600px) {
+            line-height:  1.6;
+            font-size: 2.4rem;
+        }
     }
 }

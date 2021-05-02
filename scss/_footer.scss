@@ -26,7 +26,14 @@ footer {
         padding-bottom: 3rem;
     }
     .mentions-link {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
         color: #FFF;
+    }
+    .mentions-link:hover,
+    .mentions-link:focus {
+        background-color: #fff;
+        color: $orange;
     }
     .mentions-link:first-of-type {
         padding-right: 2rem;

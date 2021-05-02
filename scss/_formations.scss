@@ -2,23 +2,28 @@
     @include dwwm-cards(62.2rem);
     .cards {
         grid-template-columns: repeat(1, 1fr);
+        @media screen and (min-width: 1060px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
-    a:hover, a:hover time, a:hover .follow {
-        background-color: $dark;
-        color: #FFF;
-    }
+    @include link-effects($dark, #FFF);
     .intro {
+        line-height: 1.2;
         font-weight: 600;
-        font-size: 2.4rem;
+        font-size: 1.7rem;
         width: 100%;
         max-width: 84rem;
         margin-bottom: 4rem;
         margin-left: auto;
-        margin-right: auto; 
-    }
-    @media screen and (min-width: 1060px) {
-        .cards {
-            grid-template-columns: repeat(2, 1fr);
+        margin-right: auto;
+        @media screen and (min-width: 350px) {
+            font-size: 2rem;
         }
+        @media screen and (min-width: 460px) {
+            font-size: 2.4rem;
+        }
+        @media screen and (min-width: 540px) {
+            line-height: 1.5;
+        } 
     }
 }
