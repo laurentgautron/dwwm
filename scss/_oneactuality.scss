@@ -29,24 +29,24 @@
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         font-size: 1.5rem;
-        @media screen and (min-width: 520px) {
+        @media screen and (min-width: 32.5em) {
             line-height: 1.5;
         }
-        @media screen and (min-width: 650px) {
+        @media screen and (min-width: 40.6em) {
             font-size: 2rem;
         }
-        @media screen and (min-width: 880px) {
+        @media screen and (min-width: 55em) {
             padding-left: 0;
             padding-right: 0;
         }
     }
-    @media screen and (min-width: 380px) {
+    @media screen and (min-width: 23.8em) {
         font-size: 3.5rem;
     }
-    @media screen and (min-width: 575px) {
+    @media screen and (min-width: 36em) {
         font-size: 4rem;
     }
-    @media screen and (min-width: 690px) {
+    @media screen and (min-width: 43.2em) {
         like-h2 {
             padding-right: 0;
             padding-left: 0;

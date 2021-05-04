@@ -3,13 +3,13 @@
         grid-template-columns: repeat(1, 1fr);
     }
     @include dwwm-cards(40.4rem);
-    @include link-effects($dark, #FFF);
-    @media screen and (min-width: 811px) {
+    @include link-effects($orange, #FFF);
+    @media screen and (min-width: 50.7em) {
         .cards {
             grid-template-columns: repeat(2, 1fr);
         }
     }
-    @media screen and (min-width: 1211px) {
+    @media screen and (min-width: 75.7em) {
         .cards {
             grid-template-columns: repeat(3, 1fr);
         }

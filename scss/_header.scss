@@ -33,6 +33,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-right: 0rem;
     }
     .menu-link {
         @extend %montserratSemiBold;
@@ -41,11 +42,11 @@ header {
         width: 100%;
         padding: 0.7em;
         text-transform: uppercase;
-        &:hover, &:focus, &[href="#"] {
+        &:hover, &:focus, &:not([href]) {
             @extend %activelink;
         }
     }
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 62em) {
         padding-right: 0;
         padding-left: 0;
         [hidden] {
@@ -65,7 +66,7 @@ header {
             padding-bottom: 3rem;
         }
     }
-    @media screen and (min-width: 1168px) {
+    @media screen and (min-width: 73em) {
         .container {
             flex-direction: row;
         }

@@ -1,6 +1,6 @@
 .hero {
     height: 90vh;
-    background-image: url("../img/photo-arrière-plan.jpg");
+    background-image: url("../img/photo-arriere-plan.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     .crossing {
@@ -9,39 +9,63 @@
     .title {
         background-color: rgba($color: #000000, $alpha: .8);
         padding-left: 2.4rem;
-        padding-right: 2.8rem;
+        padding-right: 2.4rem;
         padding-top: 2.3rem;
         padding-bottom: 3rem;
         position: absolute;
         top: 24rem;
         right: 0;
+        left: 0;
         color: #FFF;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
+        @media screen and (min-width: 73em) {
+            left: initial;
+            align-items: flex-end;
+        }
+        @media screen and (min-width: 60.7em) {
+            padding-right: 2.8rem;
+        }
+        h1 {
+            text-align: center;
+
+        }
         .dev {
             text-transform: uppercase;
         }
         .meet-link {
             @extend %montserratSemiBold;
-            font-size: 4rem;
+            text-align: center;
+            font-size: 3rem;
             line-height: 3.6rem;
             color: #FFF;
             background-color: $orange;
             padding: 2rem 3rem;
             margin-top: 3rem;
-            margin-right: 2.8rem;
+            margin-right: auto;
+            margin-left: auto;
             border: 1px solid #707070;
             transition: background-color 0.2s ease-in-out, color 0.5s ease-in-out;
             &:hover, &:focus {
                 background-color: #fff;
                 color: $orange;
             }
+            @media screen and (min-width: 30em) {
+                font-size: 4rem;
+            }
+            @media screen and (min-width: 40.7em) {
+                text-align: initial;
+            }
+            @media screen and (min-width: 60.7em) {
+                margin-right: 2.8rem;
+                margin-left: initial;
+            }
         }
     }
     @media (min-resolution: 144dpi) {
         .hero {
-            background-image: url(../img/about@2x.jpg);
+            background-image: url("../img/photo-arriere-plan@2x.jpg");
         }
     }
 }

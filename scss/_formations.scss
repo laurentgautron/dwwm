@@ -6,7 +6,7 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
-    @include link-effects($dark, #FFF);
+    @include link-effects($orange, #FFF);
     .intro {
         line-height: 1.2;
         font-weight: 600;
@@ -16,13 +16,13 @@
         margin-bottom: 4rem;
         margin-left: auto;
         margin-right: auto;
-        @media screen and (min-width: 350px) {
+        @media screen and (min-width: 22em) {
             font-size: 2rem;
         }
-        @media screen and (min-width: 460px) {
+        @media screen and (min-width: 29em) {
             font-size: 2.4rem;
         }
-        @media screen and (min-width: 540px) {
+        @media screen and (min-width: 34em) {
             line-height: 1.5;
         } 
     }

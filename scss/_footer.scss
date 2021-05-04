@@ -33,9 +33,6 @@ footer {
                 background-color: #fff;
                 color: $orange;
             }
-            &:first-of-type {
-                margin-right: 2rem;
-            }
         }   
     }
     .socialNetworks {
@@ -45,7 +42,7 @@ footer {
             margin-right: 6.6rem;
         }
     }
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 71.5em) {
         .address {
             max-width: 40.4rem;
             width: 100%;
@@ -55,7 +52,7 @@ footer {
             margin-left: 0;
         }
     }
-    @media screen and (min-width: 870px) {
+    @media screen and (min-width: 54.5em) {
         .container {
             flex-direction: row;
             text-align: initial;

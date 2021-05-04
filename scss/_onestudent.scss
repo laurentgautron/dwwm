@@ -32,10 +32,10 @@
                 font-weight: 400;
             }
         }
-        @media screen and (min-width: 540px) {
+        @media screen and (min-width: 34em) {
             grid-template-columns: repeat(2, 1fr);
         }
-        @media screen and (min-width: 1030px) {
+        @media screen and (min-width: 64.5em) {
             grid-template-columns: repeat(4, 1fr);
         }
     }

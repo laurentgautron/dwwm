@@ -71,7 +71,13 @@ body {
 h1, .like-h1 {
     line-height: 8.6rem;
     font-weight: 700;
-    font-size: 7.2rem;
+    font-size: 4rem;
+    @media screen and (min-width: 30em) {
+        font-size: 6.2rem;
+    }
+    @media screen and (min-width: 35em) {
+        font-size: 7.2rem;
+    }
 }
 
 h2, .like-h2 {
@@ -82,14 +88,14 @@ h2, .like-h2 {
     padding-bottom: 4rem;
     text-align: center;
     color: $dark;
-    @media screen and (min-width: 373px) {
+    @media screen and (min-width: 24em) {
         font-size: 4.8rem;
         }
     }
 
 h3 {
     font-size: 2rem;
-    @media screen and (min-width: 411px) {
+    @media screen and (min-width: 26em) {
         font-size: 2.4rem;
     }
 }
@@ -98,7 +104,7 @@ p {
     font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
-    @media screen and (min-width: 411px) {
+    @media screen and (min-width: 26em) {
         font-size: 2rem;
     }
 }
@@ -131,7 +137,7 @@ a {
     img {
         padding-left: 1.6rem;
     }
-    @media screen and (min-width: 411px) {
+    @media screen and (min-width: 26em) {
         font-size: 2.4rem;
     }
 }
