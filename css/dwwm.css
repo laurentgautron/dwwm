@@ -610,10 +610,12 @@ header .menu-link {
 .actualities a:hover p,
 .actualities a:hover h3,
 .actualities a:hover time,
+.actualities a:hover div,
 .actualities a:hover,
 .actualities a:focus p,
 .actualities a:focus h3,
 .actualities a:focus time,
+.actualities a:focus div,
 .actualities a:focus {
   background-color: #FD7E37;
   color: #FFF;
@@ -707,10 +709,12 @@ header .menu-link {
 .main-students a:hover p,
 .main-students a:hover h3,
 .main-students a:hover time,
+.main-students a:hover div,
 .main-students a:hover,
 .main-students a:focus p,
 .main-students a:focus h3,
 .main-students a:focus time,
+.main-students a:focus div,
 .main-students a:focus {
   background-color: #FFF;
   color: #FD7E37;
@@ -729,10 +733,12 @@ header .menu-link {
 .students a:hover p,
 .students a:hover h3,
 .students a:hover time,
+.students a:hover div,
 .students a:hover,
 .students a:focus p,
 .students a:focus h3,
 .students a:focus time,
+.students a:focus div,
 .students a:focus {
   background-color: #FD7E37;
   color: #FFF;
@@ -786,10 +792,12 @@ header .menu-link {
 .formations a:hover p,
 .formations a:hover h3,
 .formations a:hover time,
+.formations a:hover div,
 .formations a:hover,
 .formations a:focus p,
 .formations a:focus h3,
 .formations a:focus time,
+.formations a:focus div,
 .formations a:focus {
   background-color: #FD7E37;
   color: #FFF;
@@ -821,7 +829,7 @@ header .menu-link {
 }
 
 .oneformation-hero {
-  background-image: url("../img/html-code.jpg");
+  background-image: url("../img/module-html.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -844,7 +852,7 @@ header .menu-link {
 }
 @media (min-resolution: 144dpi) {
   .oneformation-hero .hero {
-    background-image: url("../img/html-code@2x.jpg");
+    background-image: url("../img/module-html@2x.jpg");
   }
 }
 
