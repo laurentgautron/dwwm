@@ -13,13 +13,16 @@
         padding-top: 2.3rem;
         padding-bottom: 3rem;
         position: absolute;
-        top: 24rem;
+        top: 17rem;
         right: 0;
         left: 0;
         color: #FFF;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media screen and  (min-width: 41em) {
+            top: 24rem;
+        }
         @media screen and (min-width: 73em) {
             left: initial;
             align-items: flex-end;
@@ -51,9 +54,9 @@
                 background-color: #fff;
                 color: $orange;
             }
-            @media screen and (min-width: 30em) {
-                font-size: 4rem;
-            }
+            // @media screen and (min-width: 32em) {
+            //     font-size: 4rem;
+            // }
             @media screen and (min-width: 40.7em) {
                 text-align: initial;
             }
