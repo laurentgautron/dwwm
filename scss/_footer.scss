@@ -1,9 +1,9 @@
 footer {
     background-color: $orange;
-    color: #FFF;
+    color: $white;
     font-family: Montserrat, sans-serif;
     font-weight: 500;
-    border: 1px solid #707070;
+    border: 1px solid $grey;
     h3 {
         @extend %montserratSemiBold;
         font-size: 2rem;
@@ -27,10 +27,10 @@ footer {
         .mentions-link {
             padding-left: 0.5rem;
             padding-right: 0.5rem;
-            color: #FFF;
+            color: $white;
             &:hover,
             &:focus {
-                background-color: #fff;
+                background-color: $white;
                 color: $orange;
             }
         }   

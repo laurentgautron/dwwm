@@ -1,3 +1,55 @@
+@charset "UTF-8";
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/montserrat/montserrat-v15-latin-regular.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v15-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/montserrat/montserrat-v15-latin-500.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v15-latin-500.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/montserrat/montserrat-v15-latin-600.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v15-latin-600.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-italic - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 400;
+  src: local(""), url("../fonts/montserrat-v15-latin-italic.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-italic.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* raleway-600 - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/raleway/raleway-v19-latin-600.woff2") format("woff2"), url("../fonts/raleway/raleway-v19-latin-600.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* raleway-700 - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/raleway/raleway-v19-latin-700.woff2") format("woff2"), url("../fonts/raleway/raleway-v19-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/*  contient les classes des balises communes aux cards du site */
+/*  seule la taille change, les couleurs sont gérées en passant par la classe de la section qui contient la card */
+/* effets de survol pour les cards du site: regroupe les balises des différentes cards du site */
 /* Box sizing rules */
 *,
 *::before,
@@ -139,7 +191,7 @@ address {
 }
 
 header .menu-link:hover, header .menu-link:focus, header .menu-link:not([href]) {
-  background-color: #fff;
+  background-color: #FFFFFF;
   color: #FD7E37;
 }
 
@@ -196,58 +248,10 @@ footer h3, .main-students h3, .students h3, .hero .title .meet-link, header .men
   padding-right: 0;
 }
 .list-nav ul li .activButton {
-  color: #FFF;
+  color: #FFFFFF;
   background-color: #FD7E37;
 }
 
-/* montserrat-regular - latin */
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""), url("../fonts/montserrat/montserrat-v15-latin-regular.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v15-latin-regular.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* montserrat-500 - latin */
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  src: local(""), url("../fonts/montserrat/montserrat-v15-latin-500.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v15-latin-500.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* montserrat-600 - latin */
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  src: local(""), url("../fonts/montserrat/montserrat-v15-latin-600.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v15-latin-600.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* montserrat-italic - latin */
-@font-face {
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 400;
-  src: local(""), url("../fonts/montserrat-v15-latin-italic.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-italic.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* raleway-600 - latin */
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 600;
-  src: local(""), url("../fonts/raleway/raleway-v19-latin-600.woff2") format("woff2"), url("../fonts/raleway/raleway-v19-latin-600.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* raleway-700 - latin */
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  src: local(""), url("../fonts/raleway/raleway-v19-latin-700.woff2") format("woff2"), url("../fonts/raleway/raleway-v19-latin-700.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 body {
   line-height: 1.5;
   color: #331100;
@@ -333,7 +337,7 @@ a {
 .follow {
   font-size: 2rem;
   background-color: #FD7E37;
-  color: #FFF;
+  color: #FFFFFF;
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -384,7 +388,7 @@ header .logo-title {
   font-weight: 700;
   font-size: 4.8rem;
   line-height: 3rem;
-  color: #FFF;
+  color: #FFFFFF;
 }
 header .header-menu {
   text-align: center;
@@ -406,7 +410,7 @@ header .container {
 }
 header .menu-link {
   font-size: 2rem;
-  color: #FFF;
+  color: #FFFFFF;
   width: 100%;
   padding: 0.7em;
   text-transform: uppercase;
@@ -446,7 +450,7 @@ header .menu-link {
   margin-left: 2rem;
   display: block;
   background-color: transparent;
-  border: 1px solid #FFF;
+  border: 1px solid #FFFFFF;
   border-radius: 1rem;
   height: 5.5rem;
 }
@@ -470,7 +474,7 @@ header .menu-link {
   color: #FD7E37;
   width: 6rem;
   height: 0.5rem;
-  background-color: #FFF;
+  background-color: #FFFFFF;
   border-radius: 0.25rem;
   margin-bottom: 0.3rem;
   margin-top: 0.3rem;
@@ -513,7 +517,7 @@ header .menu-link {
   top: 17rem;
   right: 0;
   left: 0;
-  color: #FFF;
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -542,9 +546,9 @@ header .menu-link {
 }
 .hero .title .meet-link {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 3.6rem;
-  color: #FFF;
+  color: #FFFFFF;
   background-color: #FD7E37;
   padding: 2rem 3rem;
   margin-top: 3rem;
@@ -554,8 +558,13 @@ header .menu-link {
   transition: background-color 0.2s ease-in-out, color 0.5s ease-in-out;
 }
 .hero .title .meet-link:hover, .hero .title .meet-link:focus {
-  background-color: #fff;
+  background-color: #FFFFFF;
   color: #FD7E37;
+}
+@media screen and (min-width: 20em) {
+  .hero .title .meet-link {
+    font-size: 4rem;
+  }
 }
 @media screen and (min-width: 40.7em) {
   .hero .title .meet-link {
@@ -623,7 +632,7 @@ header .menu-link {
 .actualities a:focus time,
 .actualities a:focus {
   background-color: #FD7E37;
-  color: #FFF;
+  color: #FFFFFF;
 }
 @media screen and (min-width: 50.7em) {
   .actualities .cards {
@@ -709,7 +718,7 @@ header .menu-link {
   background-color: #FD7E37;
 }
 .main-students h3, .main-students h2, .main-students .student-link {
-  color: #FFF;
+  color: #FFFFFF;
 }
 .main-students a:hover p,
 .main-students a:hover h3,
@@ -719,7 +728,7 @@ header .menu-link {
 .main-students a:focus h3,
 .main-students a:focus time,
 .main-students a:focus {
-  background-color: #FFF;
+  background-color: #FFFFFF;
   color: #FD7E37;
 }
 
@@ -742,7 +751,7 @@ header .menu-link {
 .students a:focus time,
 .students a:focus {
   background-color: #FD7E37;
-  color: #FFF;
+  color: #FFFFFF;
 }
 
 .formations {
@@ -799,7 +808,7 @@ header .menu-link {
 .formations a:focus time,
 .formations a:focus {
   background-color: #FD7E37;
-  color: #FFF;
+  color: #FFFFFF;
 }
 .formations .intro {
   line-height: 1.2;
@@ -837,7 +846,7 @@ header .menu-link {
   text-align: center;
   padding-top: 17.2rem;
   padding-bottom: 17.2rem;
-  color: #FFF;
+  color: #FFFFFF;
 }
 @media screen and (min-width: 570px) {
   .oneformation-hero .formation-title {
@@ -1072,7 +1081,7 @@ header .menu-link {
 
 footer {
   background-color: #FD7E37;
-  color: #FFF;
+  color: #FFFFFF;
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   border: 1px solid #707070;
@@ -1100,10 +1109,10 @@ footer .mentions {
 footer .mentions .mentions-link {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  color: #FFF;
+  color: #FFFFFF;
 }
 footer .mentions .mentions-link:hover, footer .mentions .mentions-link:focus {
-  background-color: #fff;
+  background-color: #FFFFFF;
   color: #FD7E37;
 }
 footer .socialNetworks {

@@ -3,7 +3,7 @@
         grid-template-columns: repeat(1, 1fr);
     }
     @include dwwm-cards(40.4rem);
-    @include link-effects($orange, #FFF);
+    @include link-effects($orange, $white);
     @media screen and (min-width: 50.7em) {
         .cards {
             grid-template-columns: repeat(2, 1fr);

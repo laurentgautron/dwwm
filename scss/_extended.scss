@@ -1,5 +1,5 @@
 %activelink {
-    background-color: #fff;
+    background-color: $white;
     color: $orange;
 }
 
@@ -14,7 +14,7 @@
 }
 
 %card-link {
-    box-shadow: 0px 0px 48px #00000029;
+    box-shadow: 0px 0px 48px $black;
     border-radius: 0.4rem;
     width: 100%;
     color: $dark;
@@ -55,7 +55,7 @@
                 padding-right: 0;
             }
             .activButton {
-                color: #FFF;
+                color: $white;
                 background-color: $orange;
             }
         }  

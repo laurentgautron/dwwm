@@ -1,3 +1,6 @@
+/*  contient les classes des balises communes aux cards du site */
+/*  seule la taille change, les couleurs sont gérées en passant par la classe de la section qui contient la card */
+
 @mixin dwwm-cards($cards-width) {
     color: $dark;
     .cards {
@@ -38,6 +41,8 @@
     }
 }
 
+
+/* effets de survol pour les cards du site: regroupe les balises des différentes cards du site */
 @mixin link-effects($bgColor, $textColor) {
     a:hover p, 
     a:hover h3,

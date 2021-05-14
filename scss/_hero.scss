@@ -16,7 +16,7 @@
         top: 17rem;
         right: 0;
         left: 0;
-        color: #FFF;
+        color: $white;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -42,16 +42,16 @@
             text-align: center;
             font-size: 2rem;
             line-height: 3.6rem;
-            color: #FFF;
+            color: $white;
             background-color: $orange;
             padding: 2rem 3rem;
             margin-top: 3rem;
             margin-right: auto;
             margin-left: auto;
-            border: 1px solid #707070;
+            border: 1px solid $grey;
             transition: background-color 0.2s ease-in-out, color 0.5s ease-in-out;
             &:hover, &:focus {
-                background-color: #fff;
+                background-color: $white;
                 color: $orange;
             }
             @media screen and (min-width: 20em) {
